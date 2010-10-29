@@ -11,8 +11,7 @@ class LandingCheck extends SpecialPage {
 		parent::__construct( 'LandingCheck' );
 	}
 }
-	
-	
+
 //$wgOut->redirect( $this->getTitle( 'view' )->getLocalUrl( "template=$template" ) );
 
 ?>
