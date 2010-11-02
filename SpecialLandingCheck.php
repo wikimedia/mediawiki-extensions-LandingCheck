@@ -20,8 +20,8 @@ class SpecialLandingCheck extends SpecialPage {
 		global $wgOut, $wgUser, $wgRequest, $wgScript;
 		
 		$language = $wgRequest->getText( 'language', 'en' );
-		$country = $wgRequest->getText( 'country' );
-		$landingPage = $wgRequest->getText( 'landing_page' );
+		$country = $wgRequest->getText( 'country', 'US' );
+		$landingPage = $wgRequest->getText( 'landing_page', 'Donate' );
 		
 		$tracking = wfArrayToCGI( array( 
 			'utm_source' => $wgRequest->getVal( 'utm_source' ),
