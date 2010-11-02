@@ -7,7 +7,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 /**
  * This page checks to see if a version of a landing page exists for the user's language and 
  * country. If not, it looks for a version localized for the user's language. If that doesn't exist 
- * either, it looks for the English version. If any of those exist, it redirects the user.
+ * either, it looks for the English version. If any of those exist, it then redirects the user.
  */
 class SpecialLandingCheck extends SpecialPage {
 	
