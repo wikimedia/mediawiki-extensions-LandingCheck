@@ -12,6 +12,7 @@ $messages = array();
  * @author Ryan Kaldari
  */
 $messages['en'] = array(
-	'landingcheck-desc' => 'This extension facilitates the use of geotargeted localized landing pages. It is a replacement for GeoLite.',
+	'landingcheck-desc' => 'Facilitates the use of geotargeted localized landing pages',
 	'landingcheck' => 'LandingCheck',
 );
+

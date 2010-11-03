@@ -13,7 +13,7 @@ EOT;
 $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'LandingCheck',
-	'version' => '1.1',
+	'version' => '1.1.1',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:LandingCheck',
 	'author' => 'Ryan Kaldari',
 	'descriptionmsg' => 'landingcheck-desc',
@@ -23,5 +23,6 @@ $dir = dirname( __FILE__ ) . '/';
 
 $wgAutoloadClasses['SpecialLandingCheck'] = $dir . 'SpecialLandingCheck.php';
 $wgExtensionMessagesFiles['LandingCheck'] = $dir . 'LandingCheck.i18n.php';
+$wgExtensionAliasesFiles['LandingCheck'] = $dir . 'LandingCheck.alias.php';
 $wgSpecialPages['LandingCheck'] = 'SpecialLandingCheck';
 $wgSpecialPageGroups['LandingCheck'] = 'contribution';
