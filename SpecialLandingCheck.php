@@ -35,7 +35,8 @@ class SpecialLandingCheck extends SpecialPage {
 		// Build array of landing pages to check for
 		$targetTexts = array(
 			$landingPage . '/' . $language . '/' . $country,
-			$landingPage . '/' . $language
+			$landingPage . '/' . $language,
+			$landingPage . '/' . Language::getFallbackFor( $language )
 		);
 		if ( $language != 'en' ) {
 			$targetTexts[] = $landingPage . '/en'; // English fallback
