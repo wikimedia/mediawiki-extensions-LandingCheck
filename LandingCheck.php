@@ -13,7 +13,7 @@ EOT;
 $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'LandingCheck',
-	'version' => '1.0',
+	'version' => '1.1',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:LandingCheck',
 	'author' => 'Ryan Kaldari',
 	'descriptionmsg' => 'landingcheck-desc',

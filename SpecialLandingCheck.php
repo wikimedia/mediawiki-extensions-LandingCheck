@@ -19,9 +19,9 @@ class SpecialLandingCheck extends SpecialPage {
 	public function execute( $sub ) {
 		global $wgOut, $wgUser, $wgRequest, $wgScript;
 		
-		$language = $wgRequest->getText( 'language', 'en' );
-		$country = $wgRequest->getText( 'country', 'US' );
-		$landingPage = $wgRequest->getText( 'landing_page', 'Donate' );
+		$language = $wgRequest->getVal( 'language', 'en' );
+		$country = $wgRequest->getVal( 'country', 'US' );
+		$landingPage = $wgRequest->getVal( 'landing_page', 'Donate' );
 		
 		$tracking = wfArrayToCGI( array( 
 			'utm_source' => $wgRequest->getVal( 'utm_source' ),
@@ -30,22 +30,20 @@ class SpecialLandingCheck extends SpecialPage {
 			'referrer' => $wgRequest->getHeader( 'referer' )
 		) );
 		
-		if ( $landingPage ) {
-			if ( strpos( $landingPage, 'Special:' ) === false ) { // landing page is not a special page
-				$target = Title::newFromText( $landingPage . '/' . $language . '/' . $country );
-				if( $target->isKnown() ) {
+		if ( strval( $landingPage ) !== '' ) {
+			$targetTexts = array(
+				$landingPage . '/' . $language . '/' . $country,
+				$landingPage . '/' . $language
+			);
+			if ( $language != 'en' ) {
+				$targetTexts[] = $landingPage . '/en';
+			}
+			foreach ( $targetTexts as $targetText ) {
+				$target = Title::newFromText( $targetText );
+				if ( $target && $target->isKnown() && $target->getNamespace() == NS_MAIN ) {
 					$wgOut->redirect( $target->getLocalURL( $tracking ) );
-				} else {
-					$target = Title::newFromText( $landingPage . '/' . $language );
-					if( $target->isKnown() ) {
-						$wgOut->redirect( $target->getLocalURL( $tracking ) );
-					} elseif ( $language != 'en' ) {
-						$target = Title::newFromText( $landingPage . '/en' );
-						if( $target->isKnown() ) {
-							$wgOut->redirect( $target->getLocalURL( $tracking ) );
-						}
-					}
-				}
+					return;
+				} 
 			}
 		}
 		
