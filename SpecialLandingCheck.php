@@ -17,7 +17,7 @@ class SpecialLandingCheck extends SpecialPage {
 	}
 	
 	public function execute( $sub ) {
-		global $wgOut, $wgRequest;
+		global $wgOut, $wgRequest, $priorityCountries;
 		
 		// Pull in query string parameters
 		$language = $wgRequest->getVal( 'language', 'en' );
@@ -32,16 +32,24 @@ class SpecialLandingCheck extends SpecialPage {
 			'referrer' => $wgRequest->getHeader( 'referer' )
 		) );
 		
-		// Build array of landing pages to check for
-		$targetTexts = array(
-			$landingPage . '/' . $language . '/' . $country,
-			$landingPage . '/' . $language
-		);
-		// Add fallback languages
-		$code = $language;
-		while ( $code !== 'en' ) {
-			$code = Language::getFallbackFor( $code );
-			$targetTexts[] = $landingPage . '/' . $code;
+		if ( in_array( $country, $priorityCountries ) ) {
+			// Build array of landing pages to check for
+			$targetTexts = array(
+				$landingPage . '/' . $country . '/' . $language,
+				$landingPage . '/' . $country
+			);
+		} else {
+			// Build array of landing pages to check for
+			$targetTexts = array(
+				$landingPage . '/' . $language . '/' . $country,
+				$landingPage . '/' . $language
+			);
+			// Add fallback languages
+			$code = $language;
+			while ( $code !== 'en' ) {
+				$code = Language::getFallbackFor( $code );
+				$targetTexts[] = $landingPage . '/' . $code;
+			}
 		}
 		
 		// Go through the possible landing pages and redirect the user as soon as one is found to exist

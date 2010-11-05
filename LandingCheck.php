@@ -19,6 +19,10 @@ $wgExtensionCredits['specialpage'][] = array(
 	'descriptionmsg' => 'landingcheck-desc',
 );
 
+// If there are any countries for which the country page should be the fallback rather than a
+// language page, add its country code to this array.
+$priorityCountries = array();
+
 $dir = dirname( __FILE__ ) . '/';
 
 $wgAutoloadClasses['SpecialLandingCheck'] = $dir . 'SpecialLandingCheck.php';
