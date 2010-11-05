@@ -24,6 +24,13 @@ $messages['de'] = array(
 	'landingcheck' => 'Websitezielprüfung',
 );
 
+/** British English (British English)
+ * @author Reedy
+ */
+$messages['en-gb'] = array(
+	'landingcheck-desc' => 'Facilitates the use of geotargeted localised landing pages',
+);
+
 /** Swiss German (Alemannisch)
  * @author Als-Holder
  */
@@ -54,6 +61,14 @@ $messages['mk'] = array(
 $messages['nl'] = array(
 	'landingcheck-desc' => "Maakt het mogelijk om via geolocatie gelokaliseerde landingspagina's aan te bieden",
 	'landingcheck' => 'Landingscontrole',
+);
+
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Jon Harald Søby
+ */
+$messages['no'] = array(
+	'landingcheck-desc' => 'Fasiliterer bruken av stedsegne landingssider',
+	'landingcheck' => 'Landingssjekk',
 );
 
 /** Polish (Polski)
