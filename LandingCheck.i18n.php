@@ -16,6 +16,14 @@ $messages['en'] = array(
 	'landingcheck' => 'LandingCheck',
 );
 
+/** Afrikaans (Afrikaans)
+ * @author Naudefj
+ */
+$messages['af'] = array(
+	'landingcheck-desc' => 'Fasiliteer die gebruik van "geotargeted" gelokaliseerde bestemmingsbladsye',
+	'landingcheck' => 'Landingskontrole',
+);
+
 /** German (Deutsch)
  * @author Kghbln
  */
@@ -29,6 +37,14 @@ $messages['de'] = array(
  */
 $messages['en-gb'] = array(
 	'landingcheck-desc' => 'Facilitates the use of geotargeted localised landing pages',
+);
+
+/** Galician (Galego)
+ * @author Toliño
+ */
+$messages['gl'] = array(
+	'landingcheck-desc' => 'Facilita o uso de páxinas de destino traducidas xeolocalizadas',
+	'landingcheck' => 'Comprobación de destino',
 );
 
 /** Swiss German (Alemannisch)
@@ -45,6 +61,14 @@ $messages['gsw'] = array(
 $messages['ia'] = array(
 	'landingcheck-desc' => 'Facilita le uso de paginas de arrivata specific al position geographic e lingua del usator',
 	'landingcheck' => 'Arrivata localisate',
+);
+
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'landingcheck-desc' => "Erliichtert d'Benotze vun Zilwebsäiten déi mat geographeschen Donnéeë verbonn sinn",
+	'landingcheck' => 'LandingCheck',
 );
 
 /** Macedonian (Македонски)
@@ -92,6 +116,14 @@ $messages['pms'] = array(
  */
 $messages['pt'] = array(
 	'landingcheck-desc' => 'Facilita o uso de páginas de destino localizadas geodireccionadas',
+);
+
+/** Brazilian Portuguese (Português do Brasil)
+ * @author Giro720
+ */
+$messages['pt-br'] = array(
+	'landingcheck-desc' => 'Facilita o uso de páginas de destino localizadas geodirecionadas',
+	'landingcheck' => 'LandingCheck',
 );
 
 /** Slovenian (Slovenščina)
