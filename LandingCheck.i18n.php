@@ -24,6 +24,13 @@ $messages['af'] = array(
 	'landingcheck' => 'Landingskontrole',
 );
 
+/** Breton (Brezhoneg)
+ * @author Y-M D
+ */
+$messages['br'] = array(
+	'landingcheck' => 'LandingCheck',
+);
+
 /** German (Deutsch)
  * @author Kghbln
  */
@@ -53,6 +60,14 @@ $messages['gl'] = array(
 $messages['gsw'] = array(
 	'landingcheck-desc' => 'Macht e lychteri Nutzig megli vu mit geografische Date verchnipfte Ziilwebsyte',
 	'landingcheck' => 'Ziilwebsytepriefig',
+);
+
+/** Upper Sorbian (Hornjoserbsce)
+ * @author Michawiki
+ */
+$messages['hsb'] = array(
+	'landingcheck-desc' => 'Wosnadnja wužiwanje cilowych stronow, kotrež so přez geodaty lokalizuja',
+	'landingcheck' => 'LandingCheck',
 );
 
 /** Interlingua (Interlingua)
