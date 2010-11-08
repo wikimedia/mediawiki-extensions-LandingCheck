@@ -31,6 +31,14 @@ $messages['br'] = array(
 	'landingcheck' => 'LandingCheck',
 );
 
+/** Bosnian (Bosanski)
+ * @author CERminator
+ */
+$messages['bs'] = array(
+	'landingcheck-desc' => 'Omogućava korištenje lokalizovanje ciljne stranice povezane sa zemljom korisnika',
+	'landingcheck' => 'Provjera ciljne stranice',
+);
+
 /** German (Deutsch)
  * @author Kghbln
  */
@@ -44,6 +52,14 @@ $messages['de'] = array(
  */
 $messages['en-gb'] = array(
 	'landingcheck-desc' => 'Facilitates the use of geotargeted localised landing pages',
+);
+
+/** French (Français)
+ * @author Peter17
+ */
+$messages['fr'] = array(
+	'landingcheck-desc' => 'Facilite l’utilisation des pages d’arrivée géolocalisées',
+	'landingcheck' => 'LandingCheck',
 );
 
 /** Galician (Galego)
@@ -128,9 +144,11 @@ $messages['pms'] = array(
 
 /** Portuguese (Português)
  * @author GoEThe
+ * @author Hamilton Abreu
  */
 $messages['pt'] = array(
-	'landingcheck-desc' => 'Facilita o uso de páginas de destino localizadas geodireccionadas',
+	'landingcheck-desc' => 'Facilita o uso de páginas de destino localizadas com segmentação geográfica',
+	'landingcheck' => 'Verificação de Destino (LandingCheck)',
 );
 
 /** Brazilian Portuguese (Português do Brasil)
