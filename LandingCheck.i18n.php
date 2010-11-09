@@ -159,6 +159,14 @@ $messages['pt-br'] = array(
 	'landingcheck' => 'LandingCheck',
 );
 
+/** Russian (Русский)
+ * @author Александр Сигачёв
+ */
+$messages['ru'] = array(
+	'landingcheck-desc' => 'Облегчает использование геозависимых локализованных целевых страниц',
+	'landingcheck' => 'LandingCheck',
+);
+
 /** Slovenian (Slovenščina)
  * @author Dbc334
  */
