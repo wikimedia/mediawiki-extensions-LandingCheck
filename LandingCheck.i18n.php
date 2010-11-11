@@ -39,6 +39,14 @@ $messages['bs'] = array(
 	'landingcheck' => 'Provjera ciljne stranice',
 );
 
+/** Czech (Česky)
+ * @author Mormegil
+ */
+$messages['cs'] = array(
+	'landingcheck-desc' => 'Usnadňuje použití geograficky cílených lokalizovaných vstupních stránek',
+	'landingcheck' => 'LandingCheck',
+);
+
 /** German (Deutsch)
  * @author Kghbln
  */
