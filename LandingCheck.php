@@ -21,7 +21,7 @@ $wgExtensionCredits['specialpage'][] = array(
 
 // If there are any countries for which the country page should be the fallback rather than a
 // language page, add its country code to this array.
-$priorityCountries = array();
+$wgPriorityCountries = array();
 
 $dir = dirname( __FILE__ ) . '/';
 

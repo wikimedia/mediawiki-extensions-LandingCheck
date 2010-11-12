@@ -17,7 +17,7 @@ class SpecialLandingCheck extends SpecialPage {
 	}
 	
 	public function execute( $sub ) {
-		global $wgOut, $wgRequest, $priorityCountries;
+		global $wgOut, $wgRequest, $wgPriorityCountries;
 		
 		// Pull in query string parameters
 		$language = $wgRequest->getVal( 'language', 'en' );
@@ -32,7 +32,7 @@ class SpecialLandingCheck extends SpecialPage {
 			'referrer' => $wgRequest->getHeader( 'referer' )
 		) );
 		
-		if ( in_array( $country, $priorityCountries ) ) {
+		if ( in_array( $country, $wgPriorityCountries ) ) {
 			// Build array of landing pages to check for
 			$targetTexts = array(
 				$landingPage . '/' . $country . '/' . $language,
