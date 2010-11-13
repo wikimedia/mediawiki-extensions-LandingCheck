@@ -25,9 +25,11 @@ $messages['af'] = array(
 );
 
 /** Breton (Brezhoneg)
+ * @author Fulup
  * @author Y-M D
  */
 $messages['br'] = array(
+	'landingcheck-desc' => "Aesaat a ra implij ar pajennoù emgavout geolec'helaet",
 	'landingcheck' => 'LandingCheck',
 );
 
@@ -100,6 +102,14 @@ $messages['hsb'] = array(
 $messages['ia'] = array(
 	'landingcheck-desc' => 'Facilita le uso de paginas de arrivata specific al position geographic e lingua del usator',
 	'landingcheck' => 'Arrivata localisate',
+);
+
+/** Japanese (日本語)
+ * @author 青子守歌
+ */
+$messages['ja'] = array(
+	'landingcheck-desc' => 'ジオタグを利用した地域化されたリンク先ページの使用を容易にします',
+	'landingcheck' => 'リンク先確認',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
