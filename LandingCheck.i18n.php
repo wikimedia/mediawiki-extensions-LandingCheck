@@ -88,6 +88,14 @@ $messages['gsw'] = array(
 	'landingcheck' => 'Ziilwebsytepriefig',
 );
 
+/** Hebrew (עברית)
+ * @author Amire80
+ */
+$messages['he'] = array(
+	'landingcheck-desc' => 'מקל על השימוש בדפי נחיתה מותאמים למקום',
+	'landingcheck' => 'LandingCheck',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
