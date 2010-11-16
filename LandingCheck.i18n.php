@@ -24,6 +24,15 @@ $messages['af'] = array(
 	'landingcheck' => 'Landingskontrole',
 );
 
+/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+ * @author EugeneZelenko
+ * @author Jim-by
+ */
+$messages['be-tarask'] = array(
+	'landingcheck-desc' => 'Палягчае выкарыстаньне геаграфічна лякалізаваных мэтавых старонак',
+	'landingcheck' => 'LandingCheck',
+);
+
 /** Breton (Brezhoneg)
  * @author Fulup
  * @author Y-M D
