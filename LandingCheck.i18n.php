@@ -121,6 +121,14 @@ $messages['ia'] = array(
 	'landingcheck' => 'Arrivata localisate',
 );
 
+/** Indonesian (Bahasa Indonesia)
+ * @author IvanLanin
+ */
+$messages['id'] = array(
+	'landingcheck-desc' => 'Memfasilitasi penggunaan halaman arahan bertarget geografis lokal',
+	'landingcheck' => 'LandingCheck',
+);
+
 /** Japanese (日本語)
  * @author 青子守歌
  */
