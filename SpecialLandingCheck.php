@@ -23,7 +23,7 @@ class SpecialLandingCheck extends SpecialPage {
 		$language = $wgRequest->getVal( 'language', 'en' );
 		
 		$country = $wgRequest->getVal( 'country' );
-		if ( !$country ) {
+		if ( !$country && function_exists( geoip_country_code_by_name ) ) {
 			$ip = wfGetIP();
 			if ( IP::isValid( $ip ) ) {
 				$country = geoip_country_code_by_name( $ip );
