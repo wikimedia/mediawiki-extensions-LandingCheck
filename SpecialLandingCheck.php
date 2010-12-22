@@ -42,7 +42,7 @@ class SpecialLandingCheck extends SpecialPage {
 			'utm_source' => $wgRequest->getVal( 'utm_source' ),
 			'utm_medium' => $wgRequest->getVal( 'utm_medium' ),
 			'utm_campaign' => $wgRequest->getVal( 'utm_campaign' ),
-			'country' => $country,
+			'country_code' => $country,
 			'referrer' => $wgRequest->getHeader( 'referer' )
 		) );
 		
