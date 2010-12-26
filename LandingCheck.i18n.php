@@ -105,6 +105,14 @@ $messages['he'] = array(
 	'landingcheck' => 'LandingCheck',
 );
 
+/** Croatian (Hrvatski)
+ * @author SpeedyGonsales
+ */
+$messages['hr'] = array(
+	'landingcheck-desc' => 'Omogućava uporabu geolokalizirane ciljne stranice',
+	'landingcheck' => 'Provjera ciljne stranice',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
