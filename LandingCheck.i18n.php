@@ -234,3 +234,11 @@ $messages['vi'] = array(
 	'landingcheck' => 'LandingCheck',
 );
 
+/** Simplified Chinese (‪中文(简体)‬)
+ * @author Hydra
+ */
+$messages['zh-hans'] = array(
+	'landingcheck-desc' => '便于使用本地化的登录页',
+	'landingcheck' => 'LandingCheck',
+);
+
