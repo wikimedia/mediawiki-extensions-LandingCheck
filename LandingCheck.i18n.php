@@ -66,6 +66,14 @@ $messages['de'] = array(
 	'landingcheck' => 'Websitezielprüfung',
 );
 
+/** Lower Sorbian (Dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'landingcheck-desc' => 'Zmóžnja wužywanje celowych bokow, kótarež su z geografiskimi datamy zwězane',
+	'landingcheck' => 'LandingCheck',
+);
+
 /** British English (British English)
  * @author Reedy
  */
