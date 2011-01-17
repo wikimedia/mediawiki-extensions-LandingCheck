@@ -250,3 +250,11 @@ $messages['zh-hans'] = array(
 	'landingcheck' => 'LandingCheck',
 );
 
+/** Traditional Chinese (‪中文(繁體)‬)
+ * @author Mark85296341
+ */
+$messages['zh-hant'] = array(
+	'landingcheck-desc' => '便於使用本地化的登入頁',
+	'landingcheck' => 'LandingCheck',
+);
+
