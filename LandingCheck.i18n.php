@@ -60,9 +60,10 @@ $messages['cs'] = array(
 
 /** German (Deutsch)
  * @author Kghbln
+ * @author Purodha
  */
 $messages['de'] = array(
-	'landingcheck-desc' => 'Ermöglicht eine erleichterte Nutzung von mit geografischen Daten verknüpften Zielwebsites in jeweils verfügbaren Sprachen',
+	'landingcheck-desc' => 'Ermöglicht eine erleichterte Nutzung von mit geografischen Daten verknüpften Zielwebseiten in jeweils verfügbaren Sprachen',
 	'landingcheck' => 'Websitezielprüfung',
 );
 
@@ -151,6 +152,14 @@ $messages['id'] = array(
 $messages['ja'] = array(
 	'landingcheck-desc' => 'ジオタグを利用した地域化されたリンク先ページの使用を容易にします',
 	'landingcheck' => 'リンク先確認',
+);
+
+/** Colognian (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'landingcheck-desc' => 'Määt et müjjelesch, op Sigge en de reschtijje Shprooch övver dänne ier Köödinate op de Ääd ze lande.',
+	'landingcheck' => 'LandeKontroll',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
