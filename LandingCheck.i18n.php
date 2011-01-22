@@ -24,7 +24,7 @@ $messages['af'] = array(
 	'landingcheck' => 'Landingskontrole',
 );
 
-/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  */
