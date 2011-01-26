@@ -203,10 +203,11 @@ $messages['pl'] = array(
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  */
 $messages['pms'] = array(
-	'landingcheck-desc' => "A facìlita l'usagi ëd pàgine d'ateragi localisà geo-mirà",
+	'landingcheck-desc' => "A facìlita l'usagi dle pàgine d'ariv geo-localisà",
 	'landingcheck' => 'LandingCheck',
 );
 
