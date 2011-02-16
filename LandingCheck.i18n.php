@@ -178,6 +178,14 @@ $messages['mk'] = array(
 	'landingcheck' => 'Местоположбена проверка за целната страница',
 );
 
+/** Malayalam (മലയാളം)
+ * @author Praveenp
+ */
+$messages['ml'] = array(
+	'landingcheck-desc' => 'ഭൗമമേഖലകളെ ലക്ഷ്യം വെച്ചുള്ള പ്രാദേശീകൃത ആദ്യ താളുകൾ നൽകുന്നു',
+	'landingcheck' => 'പതനതാൾപരീക്ഷണം',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
