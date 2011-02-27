@@ -244,6 +244,13 @@ $messages['ru'] = array(
 	'landingcheck' => 'LandingCheck',
 );
 
+/** Yakut (Саха тыла)
+ * @author HalanTul
+ */
+$messages['sah'] = array(
+	'landingcheck' => 'LandingCheck',
+);
+
 /** Slovenian (Slovenščina)
  * @author Dbc334
  */
