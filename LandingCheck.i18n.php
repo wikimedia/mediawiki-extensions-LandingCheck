@@ -248,6 +248,7 @@ $messages['ru'] = array(
  * @author HalanTul
  */
 $messages['sah'] = array(
+	'landingcheck-desc' => 'Сириттэн тутулуктаахтык тылбаастанар сорук-сирэйдэри туһаныыны чэпчэтэр',
 	'landingcheck' => 'LandingCheck',
 );
 
@@ -257,6 +258,14 @@ $messages['sah'] = array(
 $messages['sl'] = array(
 	'landingcheck-desc' => 'Omogoča uporabo jezikovno prilagojenih ciljnih strani glede na geolokacijo',
 	'landingcheck' => 'PreverjanjePristajališča',
+);
+
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'landingcheck-desc' => 'Nagpapadali sa paggamit ng pinuntiryang pangheograpiyang katutubong mga pahina ng pahinang lapagan',
+	'landingcheck' => 'Pagsusuri ng Paglapag',
 );
 
 /** Vietnamese (Tiếng Việt)
