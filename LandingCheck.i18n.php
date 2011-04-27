@@ -252,6 +252,14 @@ $messages['sah'] = array(
 	'landingcheck' => 'LandingCheck',
 );
 
+/** Slovak (Slovenčina)
+ * @author Helix84
+ */
+$messages['sk'] = array(
+	'landingcheck-desc' => 'Umožňuje použitie lokalizovaných vstupných stránok geotargeted',
+	'landingcheck' => 'KontrolaVstupnejStránky',
+);
+
 /** Slovenian (Slovenščina)
  * @author Dbc334
  */
