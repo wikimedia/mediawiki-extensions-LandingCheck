@@ -1,6 +1,6 @@
 <?php
 /**
- * Internationalisation for GeoLite extension
+ * Internationalisation for LandingCheck extension
  *
  * @file
  * @ingroup Extensions
