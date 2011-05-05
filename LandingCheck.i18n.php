@@ -146,6 +146,13 @@ $messages['id'] = array(
 	'landingcheck' => 'LandingCheck',
 );
 
+/** Italian (Italiano)
+ * @author Beta16
+ */
+$messages['it'] = array(
+	'landingcheck' => 'LandingCheck',
+);
+
 /** Japanese (日本語)
  * @author 青子守歌
  */
