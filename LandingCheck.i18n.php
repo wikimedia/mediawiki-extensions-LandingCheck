@@ -90,6 +90,13 @@ $messages['fr'] = array(
 	'landingcheck' => 'LandingCheck',
 );
 
+/** Franco-Provençal (Arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'landingcheck' => 'LandingCheck',
+);
+
 /** Galician (Galego)
  * @author Toliño
  */
