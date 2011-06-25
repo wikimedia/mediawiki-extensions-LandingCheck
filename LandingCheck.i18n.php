@@ -250,6 +250,13 @@ $messages['pt-br'] = array(
 	'landingcheck' => 'LandingCheck',
 );
 
+/** Tarandíne (Tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'landingcheck' => 'LandingCheck',
+);
+
 /** Russian (Русский)
  * @author Александр Сигачёв
  */
