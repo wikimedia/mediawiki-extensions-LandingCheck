@@ -200,6 +200,14 @@ $messages['ml'] = array(
 	'landingcheck' => 'പതനതാൾപരീക്ഷണം',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'landingcheck-desc' => 'Memudahkan penggunaan laman pendaratan tersetempat geosasar',
+	'landingcheck' => 'LandingCheck',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
