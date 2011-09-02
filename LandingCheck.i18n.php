@@ -24,6 +24,14 @@ $messages['af'] = array(
 	'landingcheck' => 'Landingskontrole',
 );
 
+/** Arabic (العربية)
+ * @author زكريا
+ */
+$messages['ar'] = array(
+	'landingcheck-desc' => 'لتيسير استعمال صفحات تحديد موقع الوصول الجغرافي',
+	'landingcheck' => 'LandingCheck',
+);
+
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
@@ -255,6 +263,13 @@ $messages['pt'] = array(
  */
 $messages['pt-br'] = array(
 	'landingcheck-desc' => 'Facilita o uso de páginas de destino localizadas geodirecionadas',
+	'landingcheck' => 'LandingCheck',
+);
+
+/** Romanian (Română)
+ * @author Firilacroco
+ */
+$messages['ro'] = array(
 	'landingcheck' => 'LandingCheck',
 );
 
