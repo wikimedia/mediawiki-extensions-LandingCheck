@@ -90,6 +90,14 @@ $messages['en-gb'] = array(
 	'landingcheck-desc' => 'Facilitates the use of geotargeted localised landing pages',
 );
 
+/** Persian (فارسی)
+ * @author Mjbmr
+ */
+$messages['fa'] = array(
+	'landingcheck-desc' => 'تسهیل استفاده از صفحات فرود هدف جغرافیایی محلی',
+	'landingcheck' => 'بررسی فرود',
+);
+
 /** French (Français)
  * @author Peter17
  */
@@ -318,6 +326,13 @@ $messages['sl'] = array(
 $messages['tl'] = array(
 	'landingcheck-desc' => 'Nagpapadali sa paggamit ng pinuntiryang pangheograpiyang katutubong mga pahina ng pahinang lapagan',
 	'landingcheck' => 'Pagsusuri ng Paglapag',
+);
+
+/** Ukrainian (Українська)
+ * @author Dim Grits
+ */
+$messages['uk'] = array(
+	'landingcheck' => 'LandingCheck',
 );
 
 /** Vietnamese (Tiếng Việt)
