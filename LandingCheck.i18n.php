@@ -94,7 +94,15 @@ $messages['en-gb'] = array(
  * @author Yekrats
  */
 $messages['eo'] = array(
+	'landingcheck-desc' => 'Faciligos la uzon de geografie asimilitaj celpaĝoj',
 	'landingcheck' => 'LandingCheck',
+);
+
+/** Spanish (Español)
+ * @author MetalBrasil
+ */
+$messages['es'] = array(
+	'landingcheck-desc' => 'Facilita el uso de páginas de aterrizaje localizada localización geográfica',
 );
 
 /** Persian (فارسی)
