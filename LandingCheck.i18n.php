@@ -16,6 +16,15 @@ $messages['en'] = array(
 	'landingcheck' => 'LandingCheck',
 );
 
+/** Message documentation (Message documentation)
+ * @author Yekrats
+ */
+$messages['qqq'] = array(
+	'landingcheck-desc' => '{{desc}}
+See http://www.mediawiki.org/wiki/Extension:LandingCheck',
+	'landingcheck' => 'The name of the extension LandingCheck. See: http://www.mediawiki.org/wiki/Extension:LandingCheck',
+);
+
 /** Afrikaans (Afrikaans)
  * @author Naudefj
  */
