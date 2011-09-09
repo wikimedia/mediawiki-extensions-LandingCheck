@@ -379,6 +379,7 @@ $messages['tl'] = array(
  * @author Dim Grits
  */
 $messages['uk'] = array(
+	'landingcheck-desc' => 'Полегшує використання геозалежних локалізованих цільових сторінок',
 	'landingcheck' => 'LandingCheck',
 );
 
