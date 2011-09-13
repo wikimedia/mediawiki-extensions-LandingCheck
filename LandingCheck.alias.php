@@ -28,6 +28,11 @@ $specialPageAliases['mk'] = array(
 	'LandingCheck' => array( 'ПроверкаНаОдредница' ),
 );
 
+/** Nedersaksisch (Nedersaksisch) */
+$specialPageAliases['nds-nl'] = array(
+	'LandingCheck' => array( 'Laandingspaginakontrole' ),
+);
+
 /** Dutch (Nederlands) */
 $specialPageAliases['nl'] = array(
 	'LandingCheck' => array( 'Landingspaginacontrole' ),
@@ -36,6 +41,16 @@ $specialPageAliases['nl'] = array(
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
 $specialPageAliases['no'] = array(
 	'LandingCheck' => array( 'Landingssjekk' ),
+);
+
+/** Cantonese (粵語) */
+$specialPageAliases['yue'] = array(
+	'LandingCheck' => array( '登陸檢查' ),
+);
+
+/** Traditional Chinese (‪中文(繁體)‬) */
+$specialPageAliases['zh-hant'] = array(
+	'LandingCheck' => array( '登陸檢查' ),
 );
 
 /**
