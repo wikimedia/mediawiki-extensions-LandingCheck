@@ -54,7 +54,7 @@ class SpecialLandingCheck extends SpecialPage {
 		
 		$localServerDetails = wfParseUrl( $wgServer );
 		
-		// The following checks are necessary due to a bug in wfParseUrl that was fxed in r94352.
+		// The following checks are necessary due to a bug in wfParseUrl that was fixed in r94352.
 		if ( $wgLandingCheckPriorityURLBase ) {
 			$priorityServerDetails = wfParseUrl( $wgLandingCheckPriorityURLBase );
 		} else {
