@@ -26,7 +26,7 @@ class SpecialLandingCheck extends SpecialPage {
 		$country = $wgRequest->getVal( 'country' );
 		// If no country was passed, try to do GeoIP lookup
 		// Requires php5-geoip package
-		if ( !$country && function_exists( geoip_country_code_by_name ) ) {
+		if ( !$country && function_exists( 'geoip_country_code_by_name' ) ) {
 			$ip = wfGetIP();
 			if ( IP::isValid( $ip ) ) {
 				$country = geoip_country_code_by_name( $ip );
@@ -53,12 +53,24 @@ class SpecialLandingCheck extends SpecialPage {
 		global $wgServer, $wgLandingCheckPriorityURLBase, $wgLandingCheckNormalURLBase;
 		
 		$localServerDetails = wfParseUrl( $wgServer );
-		$priorityServerDetails = wfParseUrl( $wgLandingCheckPriorityURLBase );
-		$normalServerDetails = wfParseUrl( $wgLandingCheckNormalURLBase );
+		
+		// The following checks are necessary due to a bug in wfParseUrl that was fxed in r94352.
+		if ( $wgLandingCheckPriorityURLBase ) {
+			$priorityServerDetails = wfParseUrl( $wgLandingCheckPriorityURLBase );
+		} else {
+			$priorityServerDetails = false;
+		}
+		if ( $wgLandingCheckNormalURLBase ) {
+			$normalServerDetails = wfParseUrl( $wgLandingCheckNormalURLBase );
+		} else {
+			$normalServerDetails = false;
+		}
+		//$priorityServerDetails = wfParseUrl( $wgLandingCheckPriorityURLBase );
+		//$normalServerDetails = wfParseUrl( $wgLandingCheckNormalURLBase );
 		
 		if ( $localServerDetails[ 'host' ] == $priorityServerDetails[ 'host' ] ) {
 			return 'priority';
-		} elseif( $localServerDetails[ 'host' ] == $normalServerDetails[ 'host' ] ) {
+		} elseif ( $localServerDetails[ 'host' ] == $normalServerDetails[ 'host' ] ) {
 			return 'normal';
 		} else {
 			return 'local';
@@ -77,10 +89,10 @@ class SpecialLandingCheck extends SpecialPage {
 		if ( $localServerType == 'local' ) {
 			$this->localRedirect( $country, $language, $priority );
 			
-		}elseif ( $priority && $localServerType == 'priority' ) {
+		} elseif ( $priority && $localServerType == 'priority' ) {
 			$this->localRedirect( $country, $language, $priority );
 
-		}elseif ( !$priority && $localServerType == 'normal' ) {
+		} elseif ( !$priority && $localServerType == 'normal' ) {
 			$this->localRedirect( $country, $language, $priority );
 		
 		} else {
@@ -92,7 +104,7 @@ class SpecialLandingCheck extends SpecialPage {
 	/**
 	 * Handle an external redirect
 	 * 
-	 * The external redirect should point to another instance of LandinCheck
+	 * The external redirect should point to another instance of LandingCheck
 	 * which will ultimately handle the request.
 	 * @param bool $priority
 	 */

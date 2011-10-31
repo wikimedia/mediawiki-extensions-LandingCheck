@@ -34,7 +34,7 @@ $wgPriorityCountries = array();
 /**
  * It is possible to configure a separate server running LandingCheck to handle
  * requests for priority countries and another for non-priority countries. By 
- * default, an instance of LandingCheck will handle both unless the following
+ * default, the local instance of LandingCheck will handle both unless the following
  * variables are configured.
  * 
  * The URLs contained in these variables should be the full URL to the location
