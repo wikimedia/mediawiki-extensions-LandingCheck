@@ -140,6 +140,7 @@ class SpecialLandingCheck extends SpecialPage {
 			'utm_medium' => $wgRequest->getVal( 'utm_medium' ),
 			'utm_campaign' => $wgRequest->getVal( 'utm_campaign' ),
 			'language' => $wgRequest->getVal( 'language', 'en'),
+			'uselang' => $wgRequest->getVal( 'language', 'en'), // for {{int:xxx}} rendering
 			'country' => $country,
 			'referrer' => $wgRequest->getHeader( 'referer' )
 		) );
