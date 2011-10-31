@@ -13,15 +13,11 @@ EOT;
 $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'LandingCheck',
-	'version' => '1.2',
+	'version' => '2.0',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:LandingCheck',
-	'author' => 'Ryan Kaldari',
+	'author' => array( 'Ryan Kaldari', 'Arthur Richards' ),
 	'descriptionmsg' => 'landingcheck-desc',
 );
-
-// If there are any countries for which the country page should be the fallback rather than a
-// language page, add its country code to this array.
-$wgPriorityCountries = array();
 
 $dir = dirname( __FILE__ ) . '/';
 
@@ -30,3 +26,25 @@ $wgExtensionMessagesFiles['LandingCheck'] = $dir . 'LandingCheck.i18n.php';
 $wgExtensionAliasesFiles['LandingCheck'] = $dir . 'LandingCheck.alias.php';
 $wgSpecialPages['LandingCheck'] = 'SpecialLandingCheck';
 $wgSpecialPageGroups['LandingCheck'] = 'contribution';
+
+// If there are any countries for which the country page should be the fallback rather than a
+// language page, add its country code to this array.
+$wgPriorityCountries = array();
+
+/**
+ * It is possible to configure a separate server running LandingCheck to handle
+ * requests for priority countries and another for non-priority countries. By 
+ * default, an instance of LandingCheck will handle both unless the following
+ * variables are configured.
+ * 
+ * The URLs contained in these variables should be the full URL to the location
+ * of LandingCheck - the query string will be appended. For example:
+ *   $wgLandingCheckPriorityURLBase = '//wikimediafoundation.org/wiki/Special:LandingCheck';
+ * 
+ * LandingCheck will compare the host portion of these URLs to what is
+ * configured for $wgServer. If the hosts match, the LandingCheck will just
+ * handle the request locally. If these are not set, LandingCheck will default to
+ * handling the request locally.
+ */
+$wgLandingCheckPriorityURLBase = null;
+$wgLandingCheckNormalURLBase = null;

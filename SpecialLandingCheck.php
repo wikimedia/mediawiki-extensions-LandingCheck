@@ -10,6 +10,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
  * it looks for the English version. If any of those exist, it then redirects the user.
  */
 class SpecialLandingCheck extends SpecialPage {
+	protected $localServerType = null;
 	
 	public function __construct() {
 		// Register special page
@@ -17,7 +18,7 @@ class SpecialLandingCheck extends SpecialPage {
 	}
 	
 	public function execute( $sub ) {
-		global $wgOut, $wgRequest, $wgPriorityCountries;
+		global $wgRequest, $wgPriorityCountries;
 		
 		// Pull in query string parameters
 		$language = $wgRequest->getVal( 'language', 'en' );
@@ -35,6 +36,90 @@ class SpecialLandingCheck extends SpecialPage {
 			$country = 'US'; // Default
 		}
 		
+		// determine if we are fulfilling a request for a priority country
+		$priority = in_array( $country, $wgPriorityCountries );
+
+		// handle the actual redirect
+		$this->routeRedirect( $country, $language, $priority );
+	}
+	
+	/**
+	 * Determine whether this server is configured as the priority or normal server
+	 * 
+	 * If this is neither the priority nor normal server, assumes 'local' - meaning
+	 * this server should be handling the request.
+	 */
+	public function determineLocalServerType() {
+		global $wgServer, $wgLandingCheckPriorityURLBase, $wgLandingCheckNormalURLBase;
+		
+		$localServerDetails = wfParseUrl( $wgServer );
+		$priorityServerDetails = wfParseUrl( $wgLandingCheckPriorityURLBase );
+		$normalServerDetails = wfParseUrl( $wgLandingCheckNormalURLBase );
+		
+		if ( $localServerDetails[ 'host' ] == $priorityServerDetails[ 'host' ] ) {
+			return 'priority';
+		} elseif( $localServerDetails[ 'host' ] == $normalServerDetails[ 'host' ] ) {
+			return 'normal';
+		} else {
+			return 'local';
+		}
+	}
+	
+	/**
+	 * Route the request to the appropriate redirect method
+	 * @param string $country
+	 * @param string $language
+	 * @param bool $priority Whether or not we handle this request on behalf of a priority country
+	 */
+	public function routeRedirect( $country, $language, $priority ) {
+		$localServerType = $this->getLocalServerType();
+
+		if ( $localServerType == 'local' ) {
+			$this->localRedirect( $country, $language, $priority );
+			
+		}elseif ( $priority && $localServerType == 'priority' ) {
+			$this->localRedirect( $country, $language, $priority );
+
+		}elseif ( !$priority && $localServerType == 'normal' ) {
+			$this->localRedirect( $country, $language, $priority );
+		
+		} else {
+			$this->externalRedirect( $priority );
+		
+		}
+	}
+	
+	/**
+	 * Handle an external redirect
+	 * 
+	 * The external redirect should point to another instance of LandinCheck
+	 * which will ultimately handle the request.
+	 * @param bool $priority
+	 */
+	public function externalRedirect( $priority ) {
+		global $wgRequest, $wgOut, $wgLandingCheckPriorityURLBase, $wgLandingCheckNormalURLBase;
+		
+		if ( $priority ) {
+			$urlBase = $wgLandingCheckPriorityURLBase;
+		
+		} else {
+			$urlBase = $wgLandingCheckNormalURLBase;
+		
+		}
+		
+		$query = $wgRequest->getValues();
+		unset( $query[ 'title' ] );
+		
+		$url = wfAppendQuery( $urlBase, $query );
+		$wgOut->redirect( $url );
+	}
+	
+	/**
+	 * Handle local redirect 
+	 * @param bool $priority Whether or not we handle this request on behalf of a priority country
+	 */
+	public function localRedirect( $country, $language, $priority=false ) {
+		global $wgOut, $wgRequest;
 		$landingPage = $wgRequest->getVal( 'landing_page', 'Donate' );
 		
 		// Construct new query string for tracking
@@ -47,7 +132,7 @@ class SpecialLandingCheck extends SpecialPage {
 			'referrer' => $wgRequest->getHeader( 'referer' )
 		) );
 		
-		if ( in_array( $country, $wgPriorityCountries ) ) {
+		if ( $priority ) {
 			// Build array of landing pages to check for
 			$targetTexts = array(
 				$landingPage . '/' . $country . '/' . $language,
@@ -75,6 +160,27 @@ class SpecialLandingCheck extends SpecialPage {
 				return;
 			} 
 		}
-		
+	}
+	
+	/**
+	 * Setter for $this->localServerType
+	 * @param string $type 
+	 */
+	public function setLocalServerType( $type = null ) {
+		if ( !$type ) {
+			$this->localServerType = $this->determineLocalServerType();
+		} else {
+			$this->localServerType = $type;
+		}
+	}
+
+	/**
+	 * Getter for $this->localServerType
+	 */
+	public function getLocalServerType() {
+		if ( !$this->localServerType ) {
+			$this->setLocalServerType();
+		}
+		return $this->localServerType;
 	}
 }
