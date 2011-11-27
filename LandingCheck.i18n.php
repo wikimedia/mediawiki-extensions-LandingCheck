@@ -41,6 +41,14 @@ $messages['ar'] = array(
 	'landingcheck' => 'LandingCheck',
 );
 
+/** Asturian (Asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'landingcheck-desc' => "Facilita l'usu de páxines de destín con llocalización xeográfica traducíes",
+	'landingcheck' => 'Comprobación de destín',
+);
+
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
