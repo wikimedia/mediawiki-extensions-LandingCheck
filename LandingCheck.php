@@ -14,7 +14,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'LandingCheck',
 	'version' => '2.0',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:LandingCheck',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:LandingCheck',
 	'author' => array( 'Ryan Kaldari', 'Arthur Richards' ),
 	'descriptionmsg' => 'landingcheck-desc',
 );
