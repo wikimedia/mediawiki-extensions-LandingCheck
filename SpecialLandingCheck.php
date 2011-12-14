@@ -11,6 +11,13 @@ if ( !defined( 'MEDIAWIKI' ) ) {
  */
 class SpecialLandingCheck extends SpecialPage {
 	protected $localServerType = null;
+	/**
+	 * If basic is set to true, do a local redirect, ignore priority, and don't pass tracking 
+	 * params. This is for non-fundraising links that just need localization.
+	 *
+	 * @var boolean $basic
+	 */
+	protected $basic = false;
 	
 	public function __construct() {
 		// Register special page
@@ -22,8 +29,9 @@ class SpecialLandingCheck extends SpecialPage {
 		
 		// Pull in query string parameters
 		$language = $wgRequest->getVal( 'language', 'en' );
-		
+		$this->basic = $wgRequest->getBool( 'basic' );
 		$country = $wgRequest->getVal( 'country' );
+		
 		// If no country was passed, try to do GeoIP lookup
 		// Requires php5-geoip package
 		if ( !$country && function_exists( 'geoip_country_code_by_name' ) ) {
@@ -85,8 +93,11 @@ class SpecialLandingCheck extends SpecialPage {
 	 */
 	public function routeRedirect( $country, $language, $priority ) {
 		$localServerType = $this->getLocalServerType();
-
-		if ( $localServerType == 'local' ) {
+		
+		if ( $this->basic ) {
+			$this->localRedirect( $country, $language, false );
+			
+		} elseif ( $localServerType == 'local' ) {
 			$this->localRedirect( $country, $language, $priority );
 			
 		} elseif ( $priority && $localServerType == 'priority' ) {
@@ -169,7 +180,11 @@ class SpecialLandingCheck extends SpecialPage {
 		foreach ( $targetTexts as $targetText ) {
 			$target = Title::newFromText( $targetText );
 			if ( $target && $target->isKnown() && $target->getNamespace() == NS_MAIN ) {
-				$wgOut->redirect( $target->getLocalURL( $tracking ) );
+				if ( $this->basic ) {
+					$wgOut->redirect( $target->getLocalURL() );
+				} else {
+					$wgOut->redirect( $target->getLocalURL( $tracking ) );
+				}
 				return;
 			} 
 		}
