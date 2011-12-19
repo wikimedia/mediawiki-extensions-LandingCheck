@@ -188,6 +188,11 @@ class SpecialLandingCheck extends SpecialPage {
 				return;
 			} 
 		}
+
+		# Output a simple error message if no pages were found
+		$this->setHeaders();
+		$this->outputHeader();
+		$wgOut->addWikiMsg( 'landingcheck-nopage' );
 	}
 	
 	/**

@@ -14,6 +14,7 @@ $messages = array();
 $messages['en'] = array(
 	'landingcheck-desc' => 'Facilitates the use of geotargeted localized landing pages',
 	'landingcheck' => 'LandingCheck',
+	'landingcheck-nopage' => 'No pages were found while performing the request.',
 );
 
 /** Message documentation (Message documentation)
