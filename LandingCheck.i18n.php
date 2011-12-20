@@ -89,8 +89,9 @@ $messages['cs'] = array(
  * @author Purodha
  */
 $messages['de'] = array(
-	'landingcheck-desc' => 'Ermöglicht eine erleichterte Nutzung von mit geografischen Daten verknüpften Zielwebseiten in jeweils verfügbaren Sprachen',
+	'landingcheck-desc' => 'Ermöglicht eine erleichterte Nutzung von mit geografischen Daten verknüpften Zielwebseiten in den jeweils verfügbaren Sprachen',
 	'landingcheck' => 'Websitezielprüfung',
+	'landingcheck-nopage' => 'Es wurden beim Ausführen der Anforderung kein Seiten gefunden.',
 );
 
 /** Lower Sorbian (Dolnoserbski)
@@ -99,6 +100,7 @@ $messages['de'] = array(
 $messages['dsb'] = array(
 	'landingcheck-desc' => 'Zmóžnja wužywanje celowych bokow, kótarež su z geografiskimi datamy zwězane',
 	'landingcheck' => 'LandingCheck',
+	'landingcheck-nopage' => 'Pśi pśewjedowanju napšašowanja njejsu se boki namakali.',
 );
 
 /** British English (British English)
@@ -160,6 +162,7 @@ $messages['frp'] = array(
 $messages['gl'] = array(
 	'landingcheck-desc' => 'Facilita o uso de páxinas de destino traducidas xeolocalizadas',
 	'landingcheck' => 'Comprobación de destino',
+	'landingcheck-nopage' => 'Non se atopou ningunha páxina levando a cabo a solicitude.',
 );
 
 /** Swiss German (Alemannisch)
@@ -192,6 +195,7 @@ $messages['hr'] = array(
 $messages['hsb'] = array(
 	'landingcheck-desc' => 'Wosnadnja wužiwanje cilowych stronow, kotrež so přez geodaty lokalizuja',
 	'landingcheck' => 'LandingCheck',
+	'landingcheck-nopage' => 'Při přewjedźenju naprašowanja njejsu so strony namakali.',
 );
 
 /** Interlingua (Interlingua)
@@ -247,6 +251,7 @@ $messages['lb'] = array(
 $messages['mk'] = array(
 	'landingcheck-desc' => 'Овозможува употреба на локализирани целни страници во зависност од земјата на корисникот',
 	'landingcheck' => 'Местоположбена проверка за целната страница',
+	'landingcheck-nopage' => 'Вршејќи го дејството не најдов ниедна страница.',
 );
 
 /** Malayalam (മലയാളം)
@@ -271,6 +276,7 @@ $messages['ms'] = array(
 $messages['nl'] = array(
 	'landingcheck-desc' => "Maakt het mogelijk om via geolocatie gelokaliseerde landingspagina's aan te bieden",
 	'landingcheck' => 'Landingscontrole',
+	'landingcheck-nopage' => "Tijdens het uitvoeren van het verzoek zijn geen pagina's gevonden.",
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
