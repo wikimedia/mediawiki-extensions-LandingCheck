@@ -141,11 +141,13 @@ $messages['fi'] = array(
 );
 
 /** French (Français)
+ * @author Gomoko
  * @author Peter17
  */
 $messages['fr'] = array(
 	'landingcheck-desc' => 'Facilite l’utilisation des pages d’arrivée géolocalisées',
 	'landingcheck' => 'LandingCheck',
+	'landingcheck-nopage' => 'Aucune page trouvée en effectuant la requête.',
 );
 
 /** Franco-Provençal (Arpetan)
@@ -373,6 +375,7 @@ $messages['sk'] = array(
 $messages['sl'] = array(
 	'landingcheck-desc' => 'Omogoča uporabo jezikovno prilagojenih ciljnih strani glede na geolokacijo',
 	'landingcheck' => 'PreverjanjePristajališča',
+	'landingcheck-nopage' => 'Med izvedbo zahteve nismo našli nobene strani.',
 );
 
 /** Swedish (Svenska)
