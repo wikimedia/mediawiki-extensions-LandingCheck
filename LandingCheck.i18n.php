@@ -270,6 +270,7 @@ $messages['ml'] = array(
 $messages['ms'] = array(
 	'landingcheck-desc' => 'Memudahkan penggunaan laman pendaratan tersetempat geosasar',
 	'landingcheck' => 'LandingCheck',
+	'landingcheck-nopage' => 'Tiada laman yang dijumpai ketika permohonan ini dilaksanakan.',
 );
 
 /** Dutch (Nederlands)
@@ -338,11 +339,13 @@ $messages['roa-tara'] = array(
 );
 
 /** Russian (Русский)
+ * @author Eugrus
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
 	'landingcheck-desc' => 'Облегчает использование геозависимых локализованных целевых страниц',
 	'landingcheck' => 'LandingCheck',
+	'landingcheck-nopage' => 'При выполнении запроса страницы не были обнаружены.',
 );
 
 /** Rusyn (Русиньскый)
