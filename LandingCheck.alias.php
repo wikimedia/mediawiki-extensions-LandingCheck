@@ -18,6 +18,11 @@ $specialPageAliases['ar'] = array(
 	'LandingCheck' => array( 'تحقق_الهدف' ),
 );
 
+/** Persian (فارسی) */
+$specialPageAliases['fa'] = array(
+	'LandingCheck' => array( 'بررسی_فرود' ),
+);
+
 /** Haitian (Kreyòl ayisyen) */
 $specialPageAliases['ht'] = array(
 	'LandingCheck' => array( 'VerifikasyonAteri' ),
@@ -26,6 +31,11 @@ $specialPageAliases['ht'] = array(
 /** Macedonian (Македонски) */
 $specialPageAliases['mk'] = array(
 	'LandingCheck' => array( 'ПроверкаНаОдредница' ),
+);
+
+/** Norwegian Bokmål (‪Norsk (bokmål)‬) */
+$specialPageAliases['nb'] = array(
+	'LandingCheck' => array( 'Landingssjekk' ),
 );
 
 /** Nedersaksisch (Nedersaksisch) */
@@ -38,11 +48,6 @@ $specialPageAliases['nl'] = array(
 	'LandingCheck' => array( 'Landingspaginacontrole' ),
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
-$specialPageAliases['nb'] = array(
-	'LandingCheck' => array( 'Landingssjekk' ),
-);
-
 /** Cantonese (粵語) */
 $specialPageAliases['yue'] = array(
 	'LandingCheck' => array( '登陸檢查' ),
@@ -52,8 +57,3 @@ $specialPageAliases['yue'] = array(
 $specialPageAliases['zh-hant'] = array(
 	'LandingCheck' => array( '登陸檢查' ),
 );
-
-/**
- * For backwards compatibility with MediaWiki 1.15 and earlier.
- */
-$aliases =& $specialPageAliases;
