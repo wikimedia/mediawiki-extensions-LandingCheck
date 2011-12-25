@@ -285,7 +285,7 @@ $messages['nl'] = array(
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'landingcheck-desc' => 'Fasiliterer bruken av stedsegne landingssider',
 	'landingcheck' => 'Landingssjekk',
 );
