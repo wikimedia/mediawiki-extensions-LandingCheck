@@ -137,7 +137,9 @@ $messages['fa'] = array(
  * @author Olli
  */
 $messages['fi'] = array(
+	'landingcheck-desc' => 'Helpottaa maantieteellisesti käännettyjä saapumissivuja',
 	'landingcheck' => 'Saapumisen tarkistus',
+	'landingcheck-nopage' => 'Pyyntöä käsiteltäessä sivuja ei löytynyt.',
 );
 
 /** French (Français)
@@ -181,6 +183,7 @@ $messages['gsw'] = array(
 $messages['he'] = array(
 	'landingcheck-desc' => 'מקל על השימוש בדפי נחיתה מותאמים למקום',
 	'landingcheck' => 'LandingCheck',
+	'landingcheck-nopage' => 'לא נמצא שום דף בזמן ביצוע הבקשה.',
 );
 
 /** Croatian (Hrvatski)
@@ -273,6 +276,14 @@ $messages['ms'] = array(
 	'landingcheck-nopage' => 'Tiada laman yang dijumpai ketika permohonan ini dilaksanakan.',
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Jon Harald Søby
+ */
+$messages['nb'] = array(
+	'landingcheck-desc' => 'Fasiliterer bruken av stedsegne landingssider',
+	'landingcheck' => 'Landingssjekk',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
@@ -280,14 +291,6 @@ $messages['nl'] = array(
 	'landingcheck-desc' => "Maakt het mogelijk om via geolocatie gelokaliseerde landingspagina's aan te bieden",
 	'landingcheck' => 'Landingscontrole',
 	'landingcheck-nopage' => "Tijdens het uitvoeren van het verzoek zijn geen pagina's gevonden.",
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
- */
-$messages['nb'] = array(
-	'landingcheck-desc' => 'Fasiliterer bruken av stedsegne landingssider',
-	'landingcheck' => 'Landingssjekk',
 );
 
 /** Polish (Polski)
