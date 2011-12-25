@@ -23,7 +23,7 @@ $dir = dirname( __FILE__ ) . '/';
 
 $wgAutoloadClasses['SpecialLandingCheck'] = $dir . 'SpecialLandingCheck.php';
 $wgExtensionMessagesFiles['LandingCheck'] = $dir . 'LandingCheck.i18n.php';
-$wgExtensionAliasesFiles['LandingCheck'] = $dir . 'LandingCheck.alias.php';
+$wgExtensionMessagesFiles['LandingCheckAlias'] = $dir . 'LandingCheck.alias.php';
 $wgSpecialPages['LandingCheck'] = 'SpecialLandingCheck';
 $wgSpecialPageGroups['LandingCheck'] = 'contribution';
 
