@@ -416,11 +416,13 @@ $messages['vi'] = array(
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
+ * @author Anakmalaysia
  * @author Hydra
  */
 $messages['zh-hans'] = array(
 	'landingcheck-desc' => '便于使用本地化的登录页',
 	'landingcheck' => 'LandingCheck',
+	'landingcheck-nopage' => '执行请求中找不到页面。',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
