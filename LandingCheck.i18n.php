@@ -209,6 +209,7 @@ $messages['hsb'] = array(
 $messages['ia'] = array(
 	'landingcheck-desc' => 'Facilita le uso de paginas de arrivata specific al position geographic e lingua del usator',
 	'landingcheck' => 'Arrivata localisate',
+	'landingcheck-nopage' => 'Nulle pagina ha essite trovate durante le execution del requesta.',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -221,9 +222,12 @@ $messages['id'] = array(
 
 /** Italian (Italiano)
  * @author Beta16
+ * @author F. Cosoleto
  */
 $messages['it'] = array(
+	'landingcheck-desc' => "Facilita l'utilizzo di landing page localizzate in base alla posizione geografica",
 	'landingcheck' => 'LandingCheck',
+	'landingcheck-nopage' => "Nessuna pagine è stata trovata durante l'esecuzione della richiesta.",
 );
 
 /** Japanese (日本語)
@@ -294,11 +298,13 @@ $messages['nl'] = array(
 );
 
 /** Polish (Polski)
+ * @author Olgak85
  * @author Sp5uhe
  */
 $messages['pl'] = array(
 	'landingcheck-desc' => 'Ułatwia automatyczny wybór strony ze względu na lokalizację geograficzną',
 	'landingcheck' => 'LandingCheck',
+	'landingcheck-nopage' => 'Nie znaleziono żadnych stron podczas wykonywania żądania.',
 );
 
 /** Piedmontese (Piemontèis)
@@ -308,6 +314,7 @@ $messages['pl'] = array(
 $messages['pms'] = array(
 	'landingcheck-desc' => "A facìlita l'usagi dle pàgine d'ariv geo-localisà",
 	'landingcheck' => 'LandingCheck',
+	'landingcheck-nopage' => "A son pa staite trovà gnun-e pagine an fasend l'arcesta.",
 );
 
 /** Portuguese (Português)
@@ -426,10 +433,12 @@ $messages['zh-hans'] = array(
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
+ * @author Anakmalaysia
  * @author Mark85296341
  */
 $messages['zh-hant'] = array(
 	'landingcheck-desc' => '便於使用本地化的登入頁',
 	'landingcheck' => 'LandingCheck',
+	'landingcheck-nopage' => '執行請求中找不到頁面。',
 );
 
