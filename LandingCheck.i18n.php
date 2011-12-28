@@ -314,7 +314,7 @@ $messages['pl'] = array(
 $messages['pms'] = array(
 	'landingcheck-desc' => "A facìlita l'usagi dle pàgine d'ariv geo-localisà",
 	'landingcheck' => 'LandingCheck',
-	'landingcheck-nopage' => "A son pa staite trovà gnun-e pagine an fasend l'arcesta.",
+	'landingcheck-nopage' => "Gnun-e pàgine a son ëstàite trovà an fasend l'arcesta.",
 );
 
 /** Portuguese (Português)
@@ -391,11 +391,19 @@ $messages['sl'] = array(
 	'landingcheck-nopage' => 'Med izvedbo zahteve nismo našli nobene strani.',
 );
 
+/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+ * @author Rancher
+ */
+$messages['sr-ec'] = array(
+	'landingcheck' => 'Провера циљне странице',
+);
+
 /** Swedish (Svenska)
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
 	'landingcheck' => 'LandingCheck',
+	'landingcheck-nopage' => 'Inga sidor hittades medan begäran utfördes.',
 );
 
 /** Tagalog (Tagalog)
@@ -408,10 +416,12 @@ $messages['tl'] = array(
 
 /** Ukrainian (Українська)
  * @author Dim Grits
+ * @author Тест
  */
 $messages['uk'] = array(
 	'landingcheck-desc' => 'Полегшує використання геозалежних локалізованих цільових сторінок',
 	'landingcheck' => 'LandingCheck',
+	'landingcheck-nopage' => 'Сторінок не знайдено під час виконання запиту.',
 );
 
 /** Vietnamese (Tiếng Việt)
