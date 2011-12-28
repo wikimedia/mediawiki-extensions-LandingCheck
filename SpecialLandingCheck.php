@@ -148,14 +148,12 @@ class SpecialLandingCheck extends SpecialPage {
 		/**
 		 * Construct new query string for tracking
 		 * 
-		 * NB that both 'language' and 'uselang' get set to 
+		 * Note that both 'language' and 'uselang' get set to 
 		 * 	$wgRequest->getVal( 'language', 'en')
 		 * This is wacky, yet by design! This is a unique oddity to fundraising
-		 * stuff, but CentralNotice converts the 'uselang' parameter to 'language',
-		 * so when a user clicks on a banner from CentralNotice which sends them 
-		 * to Special:LandingCheck, it has already munged 'uselang' into 'language'.
-		 * Ultimately, this is something that should probably be rectified in 
-		 * CentralNotice. Until then, this is what we've got.
+		 * stuff, but CentralNotice converts wgUserLanguage to 'language' rather than
+		 * 'uselang'. Ultimately, this is something that should probably be rectified
+		 * in CentralNotice. Until then, this is what we've got.
 		 */
 		$tracking = wfArrayToCGI( array( 
 			'utm_source' => $wgRequest->getVal( 'utm_source' ),
