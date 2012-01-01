@@ -48,6 +48,7 @@ $messages['ar'] = array(
 $messages['ast'] = array(
 	'landingcheck-desc' => "Facilita l'usu de páxines de destín con llocalización xeográfica traducíes",
 	'landingcheck' => 'Comprobación de destín',
+	'landingcheck-nopage' => "Nun s'alcontró denguna páxina al procesar la solicitú.",
 );
 
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
@@ -111,11 +112,13 @@ $messages['en-gb'] = array(
 );
 
 /** Esperanto (Esperanto)
+ * @author Blahma
  * @author Yekrats
  */
 $messages['eo'] = array(
 	'landingcheck-desc' => 'Faciligos la uzon de geografie asimilitaj celpaĝoj',
 	'landingcheck' => 'LandingCheck',
+	'landingcheck-nopage' => 'Neniuj paĝoj troviĝis dum plenumo de la peto.',
 );
 
 /** Spanish (Español)
@@ -201,6 +204,13 @@ $messages['hsb'] = array(
 	'landingcheck-desc' => 'Wosnadnja wužiwanje cilowych stronow, kotrež so přez geodaty lokalizuja',
 	'landingcheck' => 'LandingCheck',
 	'landingcheck-nopage' => 'Při přewjedźenju naprašowanja njejsu so strony namakali.',
+);
+
+/** Hungarian (Magyar)
+ * @author Dj
+ */
+$messages['hu'] = array(
+	'landingcheck-nopage' => 'Nem található lap a kérés végrehajtása során.',
 );
 
 /** Interlingua (Interlingua)
@@ -430,6 +440,7 @@ $messages['uk'] = array(
 $messages['vi'] = array(
 	'landingcheck-desc' => 'Cung cấp khả năng trình bày các trang đích đến bản địa hóa',
 	'landingcheck' => 'LandingCheck',
+	'landingcheck-nopage' => 'Không tìm thấy trang nào khi thực hiện yêu cầu.',
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
