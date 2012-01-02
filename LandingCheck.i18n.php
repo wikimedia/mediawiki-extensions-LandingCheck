@@ -161,6 +161,7 @@ $messages['fr'] = array(
 $messages['frp'] = array(
 	'landingcheck-desc' => 'Facilite l’usâjo de les pâges d’arrevâ g·eolocalisâs.',
 	'landingcheck' => 'LandingCheck',
+	'landingcheck-nopage' => 'Gins de pâge trovâ en fassent la requéta.',
 );
 
 /** Galician (Galego)
