@@ -28,10 +28,12 @@ See http://www.mediawiki.org/wiki/Extension:LandingCheck',
 
 /** Afrikaans (Afrikaans)
  * @author Naudefj
+ * @author පසිඳු කාවින්ද
  */
 $messages['af'] = array(
 	'landingcheck-desc' => 'Fasiliteer die gebruik van "geotargeted" gelokaliseerde bestemmingsbladsye',
 	'landingcheck' => 'Landingskontrole',
+	'landingcheck-nopage' => 'Geen bladsye gevind is, terwyl die uitvoering van die versoek.',
 );
 
 /** Arabic (العربية)
