@@ -56,10 +56,12 @@ $messages['ast'] = array(
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
+ * @author Wizardist
  */
 $messages['be-tarask'] = array(
 	'landingcheck-desc' => 'Палягчае выкарыстаньне геаграфічна лякалізаваных мэтавых старонак',
 	'landingcheck' => 'LandingCheck',
+	'landingcheck-nopage' => 'У час выкананьня запыту ніводнай старонкі не было знойдзена.',
 );
 
 /** Breton (Brezhoneg)
@@ -190,6 +192,13 @@ $messages['he'] = array(
 	'landingcheck-desc' => 'מקל על השימוש בדפי נחיתה מותאמים למקום',
 	'landingcheck' => 'LandingCheck',
 	'landingcheck-nopage' => 'לא נמצא שום דף בזמן ביצוע הבקשה.',
+);
+
+/** Hindi (हिन्दी)
+ * @author Ansumang
+ */
+$messages['hi'] = array(
+	'landingcheck' => 'लैंडिंग जांच',
 );
 
 /** Croatian (Hrvatski)
