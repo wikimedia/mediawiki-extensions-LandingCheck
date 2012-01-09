@@ -71,6 +71,7 @@ $messages['be-tarask'] = array(
 $messages['br'] = array(
 	'landingcheck-desc' => "Aesaat a ra implij ar pajennoù emgavout geolec'helaet",
 	'landingcheck' => 'LandingCheck',
+	'landingcheck-nopage' => "N'eus bet kavet pajenn ebet da-heul ar reked.",
 );
 
 /** Bosnian (Bosanski)
