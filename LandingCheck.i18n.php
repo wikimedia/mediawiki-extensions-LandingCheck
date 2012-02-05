@@ -127,10 +127,13 @@ $messages['eo'] = array(
 );
 
 /** Spanish (Español)
+ * @author Armando-Martin
  * @author MetalBrasil
  */
 $messages['es'] = array(
 	'landingcheck-desc' => 'Facilita el uso de páginas de aterrizaje localizada localización geográfica',
+	'landingcheck' => 'LandingCheck',
+	'landingcheck-nopage' => 'No se encontraron páginas al realizar la solicitud.',
 );
 
 /** Persian (فارسی)
