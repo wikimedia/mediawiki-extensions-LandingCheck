@@ -137,10 +137,11 @@ $messages['es'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Huji
  * @author Mjbmr
  */
 $messages['fa'] = array(
-	'landingcheck-desc' => 'تسهیل استفاده از صفحات فرود هدف جغرافیایی محلی',
+	'landingcheck-desc' => 'تسهیل استفاده از صفحه‌های فرود هدف جغرافیایی محلی',
 	'landingcheck' => 'بررسی فرود',
 );
 
