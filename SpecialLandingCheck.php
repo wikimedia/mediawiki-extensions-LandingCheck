@@ -178,10 +178,9 @@ class SpecialLandingCheck extends SpecialPage {
 				$landingPage . '/' . $language
 			);
 			// Add fallback languages
-			$code = $language;
-			while ( $code !== 'en' ) {
-				$code = Language::getFallbackFor( $code );
-				$targetTexts[] = $landingPage . '/' . $code;
+			$fallbacks = Language::getFallbacksFor( $language );
+			foreach ( $fallbacks as $fallback ) {
+				$targetTexts[] = $landingPage . '/' . $fallback;
 			}
 		}
 		
