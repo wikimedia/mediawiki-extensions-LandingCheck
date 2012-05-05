@@ -37,11 +37,13 @@ $messages['af'] = array(
 );
 
 /** Arabic (العربية)
+ * @author DRIHEM
  * @author زكريا
  */
 $messages['ar'] = array(
 	'landingcheck-desc' => 'لتيسير استعمال صفحات تحديد موقع الوصول الجغرافي',
 	'landingcheck' => 'LandingCheck',
+	'landingcheck-nopage' => 'تعذر العثور على أية صفحات خلال إجراء الطلب.',
 );
 
 /** Asturian (Asturianu)
