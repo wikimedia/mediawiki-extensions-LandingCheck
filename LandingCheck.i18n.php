@@ -260,10 +260,11 @@ $messages['it'] = array(
 );
 
 /** Japanese (日本語)
+ * @author Shirayuki
  * @author 青子守歌
  */
 $messages['ja'] = array(
-	'landingcheck-desc' => 'ジオタグを利用した地域化されたリンク先ページの使用を容易にします',
+	'landingcheck-desc' => 'ジオタグを利用した地域化されたリンク先ページの使用を容易にする',
 	'landingcheck' => 'リンク先確認',
 );
 
