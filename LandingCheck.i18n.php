@@ -185,11 +185,13 @@ $messages['gl'] = array(
 );
 
 /** Swiss German (Alemannisch)
+ * @author Als-Chlämens
  * @author Als-Holder
  */
 $messages['gsw'] = array(
 	'landingcheck-desc' => 'Macht e lychteri Nutzig megli vu mit geografische Date verchnipfte Ziilwebsyte',
 	'landingcheck' => 'Ziilwebsytepriefig',
+	'landingcheck-nopage' => 'Es sin bi de Ussfierig vo dere Aafroog kei Syte gfunde worde.',
 );
 
 /** Hebrew (עברית)
