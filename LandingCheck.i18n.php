@@ -276,6 +276,7 @@ $messages['ja'] = array(
 $messages['ksh'] = array(
 	'landingcheck-desc' => 'Määt et müjjelesch, op Sigge en de reschtijje Shprooch övver dänne ier Köödinate op de Ääd ze lande.',
 	'landingcheck' => 'LandeKontroll',
+	'landingcheck-nopage' => 'Met däm Opdraach ham_mer kein Sigge jefonge.',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
