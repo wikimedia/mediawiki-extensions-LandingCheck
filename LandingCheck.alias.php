@@ -18,6 +18,11 @@ $specialPageAliases['ar'] = array(
 	'LandingCheck' => array( 'تحقق_الهدف' ),
 );
 
+/** Zazaki (Zazaki) */
+$specialPageAliases['diq'] = array(
+	'LandingCheck' => array( 'CêrBerz' ),
+);
+
 /** Persian (فارسی) */
 $specialPageAliases['fa'] = array(
 	'LandingCheck' => array( 'بررسی_فرود' ),
@@ -28,12 +33,17 @@ $specialPageAliases['ht'] = array(
 	'LandingCheck' => array( 'VerifikasyonAteri' ),
 );
 
-/** Macedonian (Македонски) */
+/** Korean (한국어) */
+$specialPageAliases['ko'] = array(
+	'LandingCheck' => array( '방문확인' ),
+);
+
+/** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'LandingCheck' => array( 'ПроверкаНаОдредница' ),
 );
 
-/** Norwegian Bokmål (‪Norsk (bokmål)‬) */
+/** Norwegian Bokmål (‪norsk (bokmål)‬) */
 $specialPageAliases['nb'] = array(
 	'LandingCheck' => array( 'Landingssjekk' ),
 );
@@ -53,7 +63,7 @@ $specialPageAliases['yue'] = array(
 	'LandingCheck' => array( '登陸檢查' ),
 );
 
-/** Traditional Chinese (‪中文(繁體)‬) */
+/** Traditional Chinese (‪中文（繁體）‬) */
 $specialPageAliases['zh-hant'] = array(
 	'LandingCheck' => array( '登陸檢查' ),
 );
