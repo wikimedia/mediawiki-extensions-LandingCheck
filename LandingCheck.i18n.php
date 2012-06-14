@@ -46,7 +46,7 @@ $messages['ar'] = array(
 	'landingcheck-nopage' => 'تعذر العثور على أية صفحات خلال إجراء الطلب.',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Xuacu
  */
 $messages['ast'] = array(
@@ -66,7 +66,7 @@ $messages['be-tarask'] = array(
 	'landingcheck-nopage' => 'У час выкананьня запыту ніводнай старонкі не было знойдзена.',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  * @author Y-M D
  */
@@ -76,7 +76,7 @@ $messages['br'] = array(
 	'landingcheck-nopage' => "N'eus bet kavet pajenn ebet da-heul ar reked.",
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -84,7 +84,7 @@ $messages['bs'] = array(
 	'landingcheck' => 'Provjera ciljne stranice',
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Mormegil
  */
 $messages['cs'] = array(
@@ -128,7 +128,7 @@ $messages['eo'] = array(
 	'landingcheck-nopage' => 'Neniuj paĝoj troviĝis dum plenumo de la peto.',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Armando-Martin
  * @author MetalBrasil
  */
@@ -147,7 +147,7 @@ $messages['fa'] = array(
 	'landingcheck' => 'بررسی فرود',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Olli
  */
 $messages['fi'] = array(
@@ -156,7 +156,7 @@ $messages['fi'] = array(
 	'landingcheck-nopage' => 'Pyyntöä käsiteltäessä sivuja ei löytynyt.',
 );
 
-/** French (Français)
+/** French (français)
  * @author Gomoko
  * @author Peter17
  */
@@ -166,7 +166,7 @@ $messages['fr'] = array(
 	'landingcheck-nopage' => 'Aucune page trouvée en effectuant la requête.',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -210,7 +210,7 @@ $messages['hi'] = array(
 	'landingcheck' => 'लैंडिंग जांच',
 );
 
-/** Croatian (Hrvatski)
+/** Croatian (hrvatski)
  * @author SpeedyGonsales
  */
 $messages['hr'] = array(
@@ -227,14 +227,14 @@ $messages['hsb'] = array(
 	'landingcheck-nopage' => 'Při přewjedźenju naprašowanja njejsu so strony namakali.',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Dj
  */
 $messages['hu'] = array(
 	'landingcheck-nopage' => 'Nem található lap a kérés végrehajtása során.',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -251,7 +251,7 @@ $messages['id'] = array(
 	'landingcheck' => 'LandingCheck',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Beta16
  * @author F. Cosoleto
  */
@@ -287,7 +287,7 @@ $messages['lb'] = array(
 	'landingcheck' => 'LandingCheck',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -330,7 +330,7 @@ $messages['nl'] = array(
 	'landingcheck-nopage' => "Tijdens het uitvoeren van het verzoek zijn geen pagina's gevonden.",
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author Olgak85
  * @author Sp5uhe
  */
@@ -350,7 +350,7 @@ $messages['pms'] = array(
 	'landingcheck-nopage' => "Gnun-e pàgine a son ëstàite trovà an fasend l'arcesta.",
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author GoEThe
  * @author Hamilton Abreu
  */
@@ -359,7 +359,7 @@ $messages['pt'] = array(
 	'landingcheck' => 'Verificação de Destino (LandingCheck)',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Giro720
  */
 $messages['pt-br'] = array(
@@ -367,21 +367,21 @@ $messages['pt-br'] = array(
 	'landingcheck' => 'LandingCheck',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author Firilacroco
  */
 $messages['ro'] = array(
 	'landingcheck' => 'LandingCheck',
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
 	'landingcheck' => 'LandingCheck',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Eugrus
  * @author Александр Сигачёв
  */
@@ -399,7 +399,7 @@ $messages['rue'] = array(
 	'landingcheck' => 'LandingCheck',
 );
 
-/** Sakha (Саха тыла)
+/** Sakha (саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
@@ -407,7 +407,7 @@ $messages['sah'] = array(
 	'landingcheck' => 'LandingCheck',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  */
 $messages['sk'] = array(
@@ -415,7 +415,7 @@ $messages['sk'] = array(
 	'landingcheck' => 'KontrolaVstupnejStránky',
 );
 
-/** Slovenian (Slovenščina)
+/** Slovenian (slovenščina)
  * @author Dbc334
  */
 $messages['sl'] = array(
@@ -424,14 +424,14 @@ $messages['sl'] = array(
 	'landingcheck-nopage' => 'Med izvedbo zahteve nismo našli nobene strani.',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Rancher
  */
 $messages['sr-ec'] = array(
 	'landingcheck' => 'Провера циљне странице',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
@@ -447,7 +447,7 @@ $messages['tl'] = array(
 	'landingcheck' => 'Pagsusuri ng Paglapag',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author Dim Grits
  * @author Тест
  */
@@ -466,7 +466,7 @@ $messages['vi'] = array(
 	'landingcheck-nopage' => 'Không tìm thấy trang nào khi thực hiện yêu cầu.',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Anakmalaysia
  * @author Hydra
  */
@@ -476,7 +476,7 @@ $messages['zh-hans'] = array(
 	'landingcheck-nopage' => '执行请求中找不到页面。',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Anakmalaysia
  * @author Mark85296341
  */
