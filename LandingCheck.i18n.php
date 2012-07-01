@@ -55,7 +55,7 @@ $messages['ast'] = array(
 	'landingcheck-nopage' => "Nun s'alcontró denguna páxina al procesar la solicitú.",
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Wizardist
@@ -102,7 +102,7 @@ $messages['de'] = array(
 	'landingcheck-nopage' => 'Es wurden beim Ausführen der Anforderung kein Seiten gefunden.',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -175,7 +175,7 @@ $messages['frp'] = array(
 	'landingcheck-nopage' => 'Gins de pâge trovâ en fassent la requéta.',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -218,7 +218,7 @@ $messages['hr'] = array(
 	'landingcheck' => 'Provjera ciljne stranice',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
@@ -391,7 +391,7 @@ $messages['ru'] = array(
 	'landingcheck-nopage' => 'При выполнении запроса страницы не были обнаружены.',
 );
 
-/** Rusyn (Русиньскый)
+/** Rusyn (русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
