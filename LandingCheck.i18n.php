@@ -270,6 +270,15 @@ $messages['ja'] = array(
 	'landingcheck' => 'リンク先確認',
 );
 
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'landingcheck-desc' => '지역화된 방문 문서의 사용을 쉽게 함',
+	'landingcheck' => '방문확인',
+	'landingcheck-nopage' => '요청을 수행하는 동안 문서가 없습니다.',
+);
+
 /** Colognian (Ripoarisch)
  * @author Purodha
  */
