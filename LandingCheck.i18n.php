@@ -454,6 +454,7 @@ $messages['sv'] = array(
 $messages['tl'] = array(
 	'landingcheck-desc' => 'Nagpapadali sa paggamit ng pinuntiryang pangheograpiyang katutubong mga pahina ng pahinang lapagan',
 	'landingcheck' => 'Pagsusuri ng Paglapag',
+	'landingcheck-nopage' => 'Walang natagpuang mga pahina habang isinasagawa ang kahilingan.',
 );
 
 /** Ukrainian (українська)
