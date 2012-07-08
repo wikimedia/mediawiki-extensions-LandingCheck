@@ -90,6 +90,7 @@ $messages['bs'] = array(
 $messages['cs'] = array(
 	'landingcheck-desc' => 'Usnadňuje použití geograficky cílených lokalizovaných vstupních stránek',
 	'landingcheck' => 'LandingCheck',
+	'landingcheck-nopage' => 'Při provádění požadavku nebyly nalezeny žádné stránky.',
 );
 
 /** German (Deutsch)
