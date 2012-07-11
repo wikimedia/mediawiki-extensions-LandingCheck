@@ -323,9 +323,7 @@ $messages['ms'] = array(
 	'landingcheck-nopage' => 'Tiada laman yang dijumpai ketika permohonan ini dilaksanakan.',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
- */
+/** Norwegian Bokmål (‪norsk (bokmål)‬) */
 $messages['nb'] = array(
 	'landingcheck-desc' => 'Fasiliterer bruken av stedsegne landingssider',
 	'landingcheck' => 'Landingssjekk',
