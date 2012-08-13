@@ -437,6 +437,7 @@ $messages['sl'] = array(
  */
 $messages['sr-ec'] = array(
 	'landingcheck' => 'Провера циљне странице',
+	'landingcheck-nopage' => 'Вршећи захтев није пронађена ниједна страница.',
 );
 
 /** Swedish (svenska)
