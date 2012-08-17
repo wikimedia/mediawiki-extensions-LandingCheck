@@ -271,6 +271,14 @@ $messages['ja'] = array(
 	'landingcheck' => 'リンク先確認',
 );
 
+/** Javanese (Basa Jawa)
+ * @author NoiX180
+ */
+$messages['jv'] = array(
+	'landingcheck' => 'CèkPandaratan',
+	'landingcheck-nopage' => 'Ora ana kaca ditemokaké nalika nglakokaké panjalukan.',
+);
+
 /** Korean (한국어)
  * @author 아라
  */
@@ -465,6 +473,13 @@ $messages['uk'] = array(
 	'landingcheck-desc' => 'Полегшує використання геозалежних локалізованих цільових сторінок',
 	'landingcheck' => 'LandingCheck',
 	'landingcheck-nopage' => 'Сторінок не знайдено під час виконання запиту.',
+);
+
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ur'] = array(
+	'landingcheck-nopage' => 'کوئی صفحات کی درخواست جبکہ پائے گئے.',
 );
 
 /** Vietnamese (Tiếng Việt)
