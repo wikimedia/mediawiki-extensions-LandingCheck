@@ -18,6 +18,11 @@ $specialPageAliases['ar'] = array(
 	'LandingCheck' => array( 'تحقق_الهدف' ),
 );
 
+/** German (Deutsch) */
+$specialPageAliases['de'] = array(
+	'LandingCheck' => array( 'Websitezielprüfung' ),
+);
+
 /** Zazaki (Zazaki) */
 $specialPageAliases['diq'] = array(
 	'LandingCheck' => array( 'CêrBerz' ),

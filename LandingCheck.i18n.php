@@ -95,12 +95,13 @@ $messages['cs'] = array(
 
 /** German (Deutsch)
  * @author Kghbln
+ * @author Metalhead64
  * @author Purodha
  */
 $messages['de'] = array(
 	'landingcheck-desc' => 'Ermöglicht eine erleichterte Nutzung von mit geografischen Daten verknüpften Zielwebseiten in den jeweils verfügbaren Sprachen',
 	'landingcheck' => 'Websitezielprüfung',
-	'landingcheck-nopage' => 'Es wurden beim Ausführen der Anforderung kein Seiten gefunden.',
+	'landingcheck-nopage' => 'Es wurden beim Ausführen der Anforderung keine Seiten gefunden.',
 );
 
 /** Lower Sorbian (dolnoserbski)
