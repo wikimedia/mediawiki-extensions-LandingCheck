@@ -450,9 +450,11 @@ $messages['sr-ec'] = array(
 );
 
 /** Swedish (svenska)
+ * @author Ainali
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
+	'landingcheck-desc' => 'Underlättar användningen av geografiskt riktade landningssidor',
 	'landingcheck' => 'LandingCheck',
 	'landingcheck-nopage' => 'Inga sidor hittades medan begäran utfördes.',
 );
