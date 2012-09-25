@@ -48,7 +48,7 @@ $specialPageAliases['mk'] = array(
 	'LandingCheck' => array( 'ПроверкаНаОдредница' ),
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬) */
+/** Norwegian Bokmål (norsk (bokmål)‎) */
 $specialPageAliases['nb'] = array(
 	'LandingCheck' => array( 'Landingssjekk' ),
 );
@@ -68,7 +68,7 @@ $specialPageAliases['yue'] = array(
 	'LandingCheck' => array( '登陸檢查' ),
 );
 
-/** Traditional Chinese (‪中文（繁體）‬) */
+/** Traditional Chinese (中文（繁體）‎) */
 $specialPageAliases['zh-hant'] = array(
 	'LandingCheck' => array( '登陸檢查' ),
 );
