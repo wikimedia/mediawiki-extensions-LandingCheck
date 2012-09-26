@@ -449,6 +449,12 @@ $messages['sr-ec'] = array(
 	'landingcheck-nopage' => 'Вршећи захтев није пронађена ниједна страница.',
 );
 
+/** Serbian (Latin script) (srpski (latinica)‎) */
+$messages['sr-el'] = array(
+	'landingcheck' => 'Provera ciljne stranice',
+	'landingcheck-nopage' => 'Vršeći zahtev nije pronađena nijedna stranica.',
+);
+
 /** Swedish (svenska)
  * @author Ainali
  * @author WikiPhoenix
