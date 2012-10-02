@@ -55,7 +55,7 @@ $messages['ast'] = array(
 	'landingcheck-nopage' => "Nun s'alcontró denguna páxina al procesar la solicitú.",
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Wizardist
@@ -332,7 +332,7 @@ $messages['ms'] = array(
 	'landingcheck-nopage' => 'Tiada laman yang dijumpai ketika permohonan ini dilaksanakan.',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬) */
+/** Norwegian Bokmål (norsk (bokmål)‎) */
 $messages['nb'] = array(
 	'landingcheck-desc' => 'Fasiliterer bruken av stedsegne landingssider',
 	'landingcheck' => 'Landingssjekk',
@@ -441,7 +441,7 @@ $messages['sl'] = array(
 	'landingcheck-nopage' => 'Med izvedbo zahteve nismo našli nobene strani.',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Rancher
  */
 $messages['sr-ec'] = array(
@@ -500,7 +500,7 @@ $messages['vi'] = array(
 	'landingcheck-nopage' => 'Không tìm thấy trang nào khi thực hiện yêu cầu.',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Anakmalaysia
  * @author Hydra
  */
@@ -510,7 +510,7 @@ $messages['zh-hans'] = array(
 	'landingcheck-nopage' => '执行请求中找不到页面。',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Anakmalaysia
  * @author Mark85296341
  */
