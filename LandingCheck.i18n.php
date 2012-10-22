@@ -332,7 +332,8 @@ $messages['ms'] = array(
 	'landingcheck-nopage' => 'Tiada laman yang dijumpai ketika permohonan ini dilaksanakan.',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎) */
+/** Norwegian Bokmål (norsk (bokmål)‎)
+ */
 $messages['nb'] = array(
 	'landingcheck-desc' => 'Fasiliterer bruken av stedsegne landingssider',
 	'landingcheck' => 'Landingssjekk',
@@ -449,7 +450,8 @@ $messages['sr-ec'] = array(
 	'landingcheck-nopage' => 'Вршећи захтев није пронађена ниједна страница.',
 );
 
-/** Serbian (Latin script) (srpski (latinica)‎) */
+/** Serbian (Latin script) (srpski (latinica)‎)
+ */
 $messages['sr-el'] = array(
 	'landingcheck' => 'Provera ciljne stranice',
 	'landingcheck-nopage' => 'Vršeći zahtev nije pronađena nijedna stranica.',
@@ -519,4 +521,3 @@ $messages['zh-hant'] = array(
 	'landingcheck' => 'LandingCheck',
 	'landingcheck-nopage' => '執行請求中找不到頁面。',
 );
-
