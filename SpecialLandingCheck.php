@@ -170,7 +170,8 @@ class SpecialLandingCheck extends SpecialPage {
 			// Build array of landing pages to check for
 			$targetTexts = array(
 				$landingPage . '/' . $country . '/' . $language,
-				$landingPage . '/' . $country
+				$landingPage . '/' . $country,
+				$landingPage . '/' . $language
 			);
 		} else {
 			// Build array of landing pages to check for
