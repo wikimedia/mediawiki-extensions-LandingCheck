@@ -38,6 +38,11 @@ $specialPageAliases['ht'] = array(
 	'LandingCheck' => array( 'VerifikasyonAteri' ),
 );
 
+/** Italian (italiano) */
+$specialPageAliases['it'] = array(
+	'LandingCheck' => array( 'VerificaDestinazione' ),
+);
+
 /** Korean (한국어) */
 $specialPageAliases['ko'] = array(
 	'LandingCheck' => array( '방문확인' ),
