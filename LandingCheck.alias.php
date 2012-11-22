@@ -68,6 +68,11 @@ $specialPageAliases['nl'] = array(
 	'LandingCheck' => array( 'Landingspaginacontrole' ),
 );
 
+/** Sicilian (sicilianu) */
+$specialPageAliases['scn'] = array(
+	'LandingCheck' => array( 'VerificaDestinazione' ),
+);
+
 /** Cantonese (粵語) */
 $specialPageAliases['yue'] = array(
 	'LandingCheck' => array( '登陸檢查' ),
