@@ -58,7 +58,7 @@ $specialPageAliases['nb'] = array(
 	'LandingCheck' => array( 'Landingssjekk' ),
 );
 
-/** Nedersaksisch (Nedersaksisch) */
+/** Nedersaksies (Nedersaksies) */
 $specialPageAliases['nds-nl'] = array(
 	'LandingCheck' => array( 'Laandingspaginakontrole' ),
 );
