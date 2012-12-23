@@ -332,6 +332,14 @@ $messages['ms'] = array(
 	'landingcheck-nopage' => 'Tiada laman yang dijumpai ketika permohonan ini dilaksanakan.',
 );
 
+/** Maltese (Malti)
+ * @author Chrisportelli
+ */
+$messages['mt'] = array(
+	'landingcheck' => 'LandingCheck',
+	'landingcheck-nopage' => 'L-ebda paġna ma nstabet waqt l-eżekuzzjoni tar-rikjesta.',
+);
+
 /** Norwegian Bokmål (norsk (bokmål)‎)
  */
 $messages['nb'] = array(
