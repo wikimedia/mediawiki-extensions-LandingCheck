@@ -433,6 +433,13 @@ $messages['sah'] = array(
 	'landingcheck' => 'LandingCheck',
 );
 
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'landingcheck' => 'නැවතුම්පරික්ෂාව',
+);
+
 /** Slovak (slovenčina)
  * @author Helix84
  */
