@@ -155,7 +155,7 @@ class SpecialLandingCheck extends SpecialPage {
 		 * 'uselang'. Ultimately, this is something that should probably be rectified
 		 * in CentralNotice. Until then, this is what we've got.
 		 */
-		$tracking = wfArrayToCGI( array( 
+		$tracking = wfArrayToCgi( array(
 			'utm_source' => $wgRequest->getVal( 'utm_source' ),
 			'utm_medium' => $wgRequest->getVal( 'utm_medium' ),
 			'utm_campaign' => $wgRequest->getVal( 'utm_campaign' ),
