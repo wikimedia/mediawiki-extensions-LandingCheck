@@ -31,7 +31,12 @@ class SpecialLandingCheck extends SpecialPage {
 		$language = $wgRequest->getVal( 'language', 'en' );
 		$this->basic = $wgRequest->getBool( 'basic' );
 		$country = $wgRequest->getVal( 'country' );
-		
+
+		// if the language is false-ish, set to default
+		if( !$language ){
+			$language = 'en';
+		}
+
 		// If no country was passed, try to do GeoIP lookup
 		// Requires php5-geoip package
 		if ( !$country && function_exists( 'geoip_country_code_by_name' ) ) {
