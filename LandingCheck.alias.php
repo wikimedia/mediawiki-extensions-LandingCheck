@@ -53,7 +53,7 @@ $specialPageAliases['mk'] = array(
 	'LandingCheck' => array( 'ПроверкаНаОдредница' ),
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎) */
+/** Norwegian Bokmål (norsk bokmål) */
 $specialPageAliases['nb'] = array(
 	'LandingCheck' => array( 'Landingssjekk' ),
 );
