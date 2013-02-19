@@ -404,7 +404,9 @@ $messages['ro'] = array(
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'landingcheck-desc' => "Facilite l'ause de le pàggene de destinazione georeferenziate",
 	'landingcheck' => 'LandingCheck',
+	'landingcheck-nopage' => "Nisciuna pàgene ha state acchiate mendre ca facive 'a richieste.",
 );
 
 /** Russian (русский)
