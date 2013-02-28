@@ -18,11 +18,11 @@ $messages['en'] = array(
 );
 
 /** Message documentation (Message documentation)
+ * @author Shirayuki
  * @author Yekrats
  */
 $messages['qqq'] = array(
-	'landingcheck-desc' => '{{desc}}
-See http://www.mediawiki.org/wiki/Extension:LandingCheck',
+	'landingcheck-desc' => '{{desc|name=Landing Check|url=http://www.mediawiki.org/wiki/Extension:LandingCheck}}',
 	'landingcheck' => 'The name of the extension LandingCheck. See: http://www.mediawiki.org/wiki/Extension:LandingCheck',
 );
 
