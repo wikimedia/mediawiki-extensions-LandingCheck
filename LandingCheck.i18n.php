@@ -24,6 +24,7 @@ $messages['en'] = array(
 $messages['qqq'] = array(
 	'landingcheck-desc' => '{{desc|name=Landing Check|url=http://www.mediawiki.org/wiki/Extension:LandingCheck}}',
 	'landingcheck' => 'The name of the extension LandingCheck. See: http://www.mediawiki.org/wiki/Extension:LandingCheck',
+	'landingcheck-nopage' => 'Used as simple error message in [[Special:LandingCheck]].',
 );
 
 /** Afrikaans (Afrikaans)
