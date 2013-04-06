@@ -80,7 +80,7 @@ $specialPageAliases['yue'] = array(
 
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
-	'LandingCheck' => array( '降落检查' ),
+	'LandingCheck' => array( '着陆页检查' ),
 );
 
 /** Traditional Chinese (中文（繁體）‎) */
