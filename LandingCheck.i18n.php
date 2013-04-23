@@ -273,7 +273,7 @@ $messages['it'] = array(
 $messages['ja'] = array(
 	'landingcheck-desc' => 'ジオタグを利用した地域化されたリンク先ページの使用を容易にする',
 	'landingcheck' => 'リンク先確認',
-	'landingcheck-nopage' => '要求を実行しましたが、ページは見つかりませんでした。',
+	'landingcheck-nopage' => '要求を実行する際にページが見つかりませんでした。',
 );
 
 /** Javanese (Basa Jawa)
