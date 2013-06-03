@@ -344,7 +344,7 @@ $messages['mt'] = array(
 	'landingcheck-nopage' => 'L-ebda paġna ma nstabet waqt l-eżekuzzjoni tar-rikjesta.',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  */
 $messages['nb'] = array(
 	'landingcheck-desc' => 'Fasiliterer bruken av stedsegne landingssider',
