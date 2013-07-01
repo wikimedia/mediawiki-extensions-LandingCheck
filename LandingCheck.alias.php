@@ -25,7 +25,7 @@ $specialPageAliases['de'] = array(
 
 /** Zazaki (Zazaki) */
 $specialPageAliases['diq'] = array(
-	'LandingCheck' => array( 'CêrBerz' ),
+	'LandingCheck' => array( 'CérBerz' ),
 );
 
 /** Persian (فارسی) */
