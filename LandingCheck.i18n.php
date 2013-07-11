@@ -145,10 +145,12 @@ $messages['es'] = array(
 /** Persian (فارسی)
  * @author Huji
  * @author Mjbmr
+ * @author Reza1615
  */
 $messages['fa'] = array(
 	'landingcheck-desc' => 'تسهیل استفاده از صفحه‌های فرود هدف جغرافیایی محلی',
 	'landingcheck' => 'بررسی فرود',
+	'landingcheck-nopage' => 'هیچ صفحه‌ای در حالی که انجام درخواست یافت نشد.',
 );
 
 /** Finnish (suomi)
