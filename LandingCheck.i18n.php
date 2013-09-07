@@ -362,6 +362,15 @@ $messages['nl'] = array(
 	'landingcheck-nopage' => "Tijdens het uitvoeren van het verzoek zijn geen pagina's gevonden.",
 );
 
+/** Occitan (occitan)
+ * @author Cedric31
+ */
+$messages['oc'] = array(
+	'landingcheck-desc' => 'Facilita l’utilizacion de las paginas d’arrivada geolocalizadas',
+	'landingcheck' => 'LandingCheck',
+	'landingcheck-nopage' => 'Cap de pagina pas trobada en efectuant la requèsta.',
+);
+
 /** Polish (polski)
  * @author Olgak85
  * @author Sp5uhe
