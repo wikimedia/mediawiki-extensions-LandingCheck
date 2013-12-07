@@ -86,7 +86,7 @@ $messages['bs'] = array(
 	'landingcheck' => 'Provjera ciljne stranice',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Mormegil
  */
 $messages['cs'] = array(
