@@ -26,14 +26,21 @@ class SpecialLandingCheck extends SpecialPage {
 	
 	public function execute( $sub ) {
 		global $wgRequest, $wgPriorityCountries;
-		
+
+		// If we have a subpage; assume it's a language like an internationalized page
+		$language = 'en';
+		$path = explode( '/', $sub );
+		if ( Language::isValidCode( $path[count($path) - 1] ) ) {
+			$language = $sub;
+		}
+
 		// Pull in query string parameters
-		$language = $wgRequest->getVal( 'language', 'en' );
+		$language = $wgRequest->getVal( 'language', $language );
 		$this->basic = $wgRequest->getBool( 'basic' );
 		$country = $wgRequest->getVal( 'country' );
 
 		// if the language is false-ish, set to default
-		if( !$language ){
+		if( !$language ) {
 			$language = 'en';
 		}
 
@@ -165,8 +172,8 @@ class SpecialLandingCheck extends SpecialPage {
 			'utm_medium' => $wgRequest->getVal( 'utm_medium' ),
 			'utm_campaign' => $wgRequest->getVal( 'utm_campaign' ),
 			'utm_key' => $wgRequest->getVal( 'utm_key' ),
-			'language' => $wgRequest->getVal( 'language', 'en'),
-			'uselang' => $wgRequest->getVal( 'language', 'en'), // for {{int:xxx}} rendering
+			'language' => $language,
+			'uselang' => $language, // for {{int:xxx}} rendering
 			'country' => $country,
 			'referrer' => $wgRequest->getHeader( 'referer' )
 		) );
