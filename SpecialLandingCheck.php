@@ -15,9 +15,18 @@ class SpecialLandingCheck extends SpecialPage {
 	 * If basic is set to true, do a local redirect, ignore priority, and don't pass tracking 
 	 * params. This is for non-fundraising links that just need localization.
 	 *
-	 * @var boolean
+	 * @var boolean $basic
 	 */
 	protected $basic = false;
+
+	/**
+	 * If anchor text is passed add that to the end of the created url so that it can be used to
+	 * position the resulting page. This is currently used only for non-fundraising links that need
+	 * localization and therefore is only checked if basic (above) is true.
+	 *
+	 * @var string $anchor
+	 */
+	protected $anchor = null;
 	
 	public function __construct() {
 		// Register special page
@@ -28,6 +37,7 @@ class SpecialLandingCheck extends SpecialPage {
 		global $wgRequest, $wgPriorityCountries;
 
 		// If we have a subpage; assume it's a language like an internationalized page
+
 		$language = 'en';
 		$path = explode( '/', $sub );
 		if ( Language::isValidCode( $path[count($path) - 1] ) ) {
@@ -38,6 +48,7 @@ class SpecialLandingCheck extends SpecialPage {
 		$language = $wgRequest->getVal( 'language', $language );
 		$this->basic = $wgRequest->getBool( 'basic' );
 		$country = $wgRequest->getVal( 'country' );
+		$this->anchor = $wgRequest->getVal ( 'anchor' );
 
 		// if the language is false-ish, set to default
 		if( !$language ) {
@@ -203,7 +214,11 @@ class SpecialLandingCheck extends SpecialPage {
 			$target = Title::newFromText( $targetText );
 			if ( $target && $target->isKnown() && $target->getNamespace() == NS_MAIN ) {
 				if ( $this->basic ) {
-					$wgOut->redirect( $target->getLocalURL() );
+					if ( isset( $this->anchor ) ) {
+						$wgOut->redirect ( $target->getLocalURL().'#'.$this->anchor );
+					} else {
+						$wgOut->redirect( $target->getLocalURL() );
+					}
 				} else {
 					$wgOut->redirect( $target->getLocalURL( $tracking ) );
 				}
