@@ -34,7 +34,8 @@ class SpecialLandingCheck extends SpecialPage {
 	}
 	
 	public function execute( $sub ) {
-		global $wgRequest, $wgPriorityCountries;
+		global $wgPriorityCountries;
+		$request = $this->getRequest();
 
 		// If we have a subpage; assume it's a language like an internationalized page
 
@@ -45,10 +46,10 @@ class SpecialLandingCheck extends SpecialPage {
 		}
 
 		// Pull in query string parameters
-		$language = $wgRequest->getVal( 'language', $language );
-		$this->basic = $wgRequest->getBool( 'basic' );
-		$country = $wgRequest->getVal( 'country' );
-		$this->anchor = $wgRequest->getVal ( 'anchor' );
+		$language = $request->getVal( 'language', $language );
+		$this->basic = $request->getBool( 'basic' );
+		$country = $request->getVal( 'country' );
+		$this->anchor = $request->getVal ( 'anchor' );
 
 		// if the language is false-ish, set to default
 		if( !$language ) {
@@ -58,7 +59,7 @@ class SpecialLandingCheck extends SpecialPage {
 		// If no country was passed, try to do GeoIP lookup
 		// Requires php5-geoip package
 		if ( !$country && function_exists( 'geoip_country_code_by_name' ) ) {
-			$ip = wfGetIP();
+			$ip = $request->getIP();
 			if ( IP::isValid( $ip ) ) {
 				$country = geoip_country_code_by_name( $ip );
 			}
@@ -143,8 +144,8 @@ class SpecialLandingCheck extends SpecialPage {
 	 * @param bool $priority
 	 */
 	public function externalRedirect( $priority ) {
-		global $wgRequest, $wgOut, $wgLandingCheckPriorityURLBase, $wgLandingCheckNormalURLBase;
-		
+		global $wgLandingCheckPriorityURLBase, $wgLandingCheckNormalURLBase;
+
 		if ( $priority ) {
 			$urlBase = $wgLandingCheckPriorityURLBase;
 		
@@ -153,11 +154,11 @@ class SpecialLandingCheck extends SpecialPage {
 		
 		}
 		
-		$query = $wgRequest->getValues();
+		$query = $this->getRequest()->getValues();
 		unset( $query[ 'title' ] );
 		
 		$url = wfAppendQuery( $urlBase, $query );
-		$wgOut->redirect( $url );
+		$this->getOutput()->redirect( $url );
 	}
 	
 	/**
@@ -165,28 +166,29 @@ class SpecialLandingCheck extends SpecialPage {
 	 * @param bool $priority Whether or not we handle this request on behalf of a priority country
 	 */
 	public function localRedirect( $country, $language, $priority=false ) {
-		global $wgOut, $wgRequest;
-		$landingPage = $wgRequest->getVal( 'landing_page', 'Donate' );
+		$out = $this->getOutput();
+		$request = $this->getRequest();
+		$landingPage = $request->getVal( 'landing_page', 'Donate' );
 		
 		/**
 		 * Construct new query string for tracking
 		 * 
 		 * Note that both 'language' and 'uselang' get set to 
-		 * 	$wgRequest->getVal( 'language', 'en')
+		 * 	$request->getVal( 'language', 'en')
 		 * This is wacky, yet by design! This is a unique oddity to fundraising
 		 * stuff, but CentralNotice converts wgUserLanguage to 'language' rather than
 		 * 'uselang'. Ultimately, this is something that should probably be rectified
 		 * in CentralNotice. Until then, this is what we've got.
 		 */
 		$tracking = wfArrayToCgi( array(
-			'utm_source' => $wgRequest->getVal( 'utm_source' ),
-			'utm_medium' => $wgRequest->getVal( 'utm_medium' ),
-			'utm_campaign' => $wgRequest->getVal( 'utm_campaign' ),
-			'utm_key' => $wgRequest->getVal( 'utm_key' ),
+			'utm_source' => $request->getVal( 'utm_source' ),
+			'utm_medium' => $request->getVal( 'utm_medium' ),
+			'utm_campaign' => $request->getVal( 'utm_campaign' ),
+			'utm_key' => $request->getVal( 'utm_key' ),
 			'language' => $language,
 			'uselang' => $language, // for {{int:xxx}} rendering
 			'country' => $country,
-			'referrer' => $wgRequest->getHeader( 'referer' )
+			'referrer' => $request->getHeader( 'referer' )
 		) );
 		
 		if ( $priority ) {
@@ -215,12 +217,12 @@ class SpecialLandingCheck extends SpecialPage {
 			if ( $target && $target->isKnown() && $target->getNamespace() == NS_MAIN ) {
 				if ( $this->basic ) {
 					if ( isset( $this->anchor ) ) {
-						$wgOut->redirect ( $target->getLocalURL().'#'.$this->anchor );
+						$out->redirect ( $target->getLocalURL().'#'.$this->anchor );
 					} else {
-						$wgOut->redirect( $target->getLocalURL() );
+						$out->redirect( $target->getLocalURL() );
 					}
 				} else {
-					$wgOut->redirect( $target->getLocalURL( $tracking ) );
+					$out->redirect( $target->getLocalURL( $tracking ) );
 				}
 				return;
 			} 
@@ -229,7 +231,7 @@ class SpecialLandingCheck extends SpecialPage {
 		# Output a simple error message if no pages were found
 		$this->setHeaders();
 		$this->outputHeader();
-		$wgOut->addWikiMsg( 'landingcheck-nopage' );
+		$out->addWikiMsg( 'landingcheck-nopage' );
 	}
 	
 	/**
