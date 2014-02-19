@@ -19,6 +19,11 @@ $specialPageAliases['ar'] = array(
 	'LandingCheck' => array( 'تحقق_الهدف' ),
 );
 
+/** Egyptian Spoken Arabic (مصرى) */
+$specialPageAliases['arz'] = array(
+	'LandingCheck' => array( 'تحقق_الهدف' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'LandingCheck' => array( 'Websitezielprüfung' ),
