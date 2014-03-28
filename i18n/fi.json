@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "Olli"
+        ]
+    },
+    "landingcheck-desc": "Helpottaa maantieteellisesti käännettyjä saapumissivuja",
+    "landingcheck": "Saapumisen tarkistus",
+    "landingcheck-nopage": "Pyyntöä käsiteltäessä sivuja ei löytynyt."
+}

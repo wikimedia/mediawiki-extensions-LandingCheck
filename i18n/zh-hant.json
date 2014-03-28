@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "Anakmalaysia",
+            "Mark85296341"
+        ]
+    },
+    "landingcheck-desc": "便於使用本地化的登入頁",
+    "landingcheck": "LandingCheck",
+    "landingcheck-nopage": "執行請求中找不到頁面。"
+}

@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Rancher"
+        ]
+    },
+    "landingcheck": "Провера циљне странице",
+    "landingcheck-nopage": "Вршећи захтев није пронађена ниједна страница."
+}

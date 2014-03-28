@@ -1,0 +1,11 @@
+{
+    "@metadata": {
+        "authors": [
+            "Olgak85",
+            "Sp5uhe"
+        ]
+    },
+    "landingcheck-desc": "Ułatwia automatyczny wybór strony ze względu na lokalizację geograficzną",
+    "landingcheck": "LandingCheck",
+    "landingcheck-nopage": "Nie znaleziono żadnych stron podczas wykonywania żądania."
+}

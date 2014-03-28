@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "Siebrand"
+        ]
+    },
+    "landingcheck-desc": "Maakt het mogelijk om via geolocatie gelokaliseerde landingspagina's aan te bieden",
+    "landingcheck": "Landingscontrole",
+    "landingcheck-nopage": "Tijdens het uitvoeren van het verzoek zijn geen pagina's gevonden."
+}

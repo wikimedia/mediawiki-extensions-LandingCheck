@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Helix84"
+        ]
+    },
+    "landingcheck-desc": "Umožňuje použitie lokalizovaných vstupných stránok geotargeted",
+    "landingcheck": "KontrolaVstupnejStránky"
+}

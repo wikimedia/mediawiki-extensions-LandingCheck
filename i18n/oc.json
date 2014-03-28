@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "Cedric31"
+        ]
+    },
+    "landingcheck-desc": "Facilita l’utilizacion de las paginas d’arrivada geolocalizadas",
+    "landingcheck": "LandingCheck",
+    "landingcheck-nopage": "Cap de pagina pas trobada en efectuant la requèsta."
+}
