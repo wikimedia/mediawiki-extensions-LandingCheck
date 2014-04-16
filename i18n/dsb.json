@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Michawiki"
-        ]
-    },
-    "landingcheck-desc": "Zmóžnja wužywanje celowych bokow, kótarež su z geografiskimi datamy zwězane",
-    "landingcheck": "LandingCheck",
-    "landingcheck-nopage": "Pśi pśewjedowanju napšašowanja njejsu se boki namakali."
+	"@metadata": {
+		"authors": [
+			"Michawiki"
+		]
+	},
+	"landingcheck-desc": "Zmóžnja wužywanje celowych bokow, kótarež su z geografiskimi datamy zwězane",
+	"landingcheck": "LandingCheck",
+	"landingcheck-nopage": "Pśi pśewjedowanju napšašowanja njejsu se boki namakali."
 }

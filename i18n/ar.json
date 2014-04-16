@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "DRIHEM",
-            "زكريا"
-        ]
-    },
-    "landingcheck-desc": "لتيسير استعمال صفحات تحديد موقع الوصول الجغرافي",
-    "landingcheck": "LandingCheck",
-    "landingcheck-nopage": "تعذر العثور على أية صفحات خلال إجراء الطلب."
+	"@metadata": {
+		"authors": [
+			"DRIHEM",
+			"زكريا"
+		]
+	},
+	"landingcheck-desc": "لتيسير استعمال صفحات تحديد موقع الوصول الجغرافي",
+	"landingcheck": "LandingCheck",
+	"landingcheck-nopage": "تعذر العثور على أية صفحات خلال إجراء الطلب."
 }

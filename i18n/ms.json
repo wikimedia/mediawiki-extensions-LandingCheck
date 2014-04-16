@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Anakmalaysia"
-        ]
-    },
-    "landingcheck-desc": "Memudahkan penggunaan laman pendaratan tersetempat geosasar",
-    "landingcheck": "LandingCheck",
-    "landingcheck-nopage": "Tiada laman yang dijumpai ketika permohonan ini dilaksanakan."
+	"@metadata": {
+		"authors": [
+			"Anakmalaysia"
+		]
+	},
+	"landingcheck-desc": "Memudahkan penggunaan laman pendaratan tersetempat geosasar",
+	"landingcheck": "LandingCheck",
+	"landingcheck-nopage": "Tiada laman yang dijumpai ketika permohonan ini dilaksanakan."
 }

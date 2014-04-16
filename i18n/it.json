@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Beta16",
-            "F. Cosoleto"
-        ]
-    },
-    "landingcheck-desc": "Facilita l'utilizzo di landing page localizzate in base alla posizione geografica",
-    "landingcheck": "LandingCheck",
-    "landingcheck-nopage": "Nessuna pagine è stata trovata durante l'esecuzione della richiesta."
+	"@metadata": {
+		"authors": [
+			"Beta16",
+			"F. Cosoleto"
+		]
+	},
+	"landingcheck-desc": "Facilita l'utilizzo di landing page localizzate in base alla posizione geografica",
+	"landingcheck": "LandingCheck",
+	"landingcheck-nopage": "Nessuna pagine è stata trovata durante l'esecuzione della richiesta."
 }

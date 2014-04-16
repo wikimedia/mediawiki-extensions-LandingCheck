@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Gazeb"
-        ]
-    },
-    "landingcheck-desc": "Злегчує хоснованя ґеоґрафічно цїленых локалізованых вступных сторінок",
-    "landingcheck": "LandingCheck"
+	"@metadata": {
+		"authors": [
+			"Gazeb"
+		]
+	},
+	"landingcheck-desc": "Злегчує хоснованя ґеоґрафічно цїленых локалізованых вступных сторінок",
+	"landingcheck": "LandingCheck"
 }

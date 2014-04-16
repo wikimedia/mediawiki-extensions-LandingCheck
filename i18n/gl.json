@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Toliño"
-        ]
-    },
-    "landingcheck-desc": "Facilita o uso de páxinas de destino traducidas xeolocalizadas",
-    "landingcheck": "Comprobación de destino",
-    "landingcheck-nopage": "Non se atopou ningunha páxina levando a cabo a solicitude."
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"landingcheck-desc": "Facilita o uso de páxinas de destino traducidas xeolocalizadas",
+	"landingcheck": "Comprobación de destino",
+	"landingcheck-nopage": "Non se atopou ningunha páxina levando a cabo a solicitude."
 }

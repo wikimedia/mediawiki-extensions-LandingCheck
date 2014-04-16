@@ -1,7 +1,5 @@
 {
-    "@metadata": {
-        "authors": []
-    },
-    "landingcheck-desc": "Fasiliterer bruken av stedsegne landingssider",
-    "landingcheck": "Landingssjekk"
+	"@metadata": [],
+	"landingcheck-desc": "Fasiliterer bruken av stedsegne landingssider",
+	"landingcheck": "Landingssjekk"
 }

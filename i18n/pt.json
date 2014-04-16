@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "GoEThe",
-            "Hamilton Abreu"
-        ]
-    },
-    "landingcheck-desc": "Facilita o uso de páginas de destino localizadas com segmentação geográfica",
-    "landingcheck": "Verificação de Destino (LandingCheck)"
+	"@metadata": {
+		"authors": [
+			"GoEThe",
+			"Hamilton Abreu"
+		]
+	},
+	"landingcheck-desc": "Facilita o uso de páginas de destino localizadas com segmentação geográfica",
+	"landingcheck": "Verificação de Destino (LandingCheck)"
 }

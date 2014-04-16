@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "ChrisPtDe"
-        ]
-    },
-    "landingcheck-desc": "Facilite l’usâjo de les pâges d’arrevâ g·eolocalisâs.",
-    "landingcheck": "LandingCheck",
-    "landingcheck-nopage": "Gins de pâge trovâ en fassent la requéta."
+	"@metadata": {
+		"authors": [
+			"ChrisPtDe"
+		]
+	},
+	"landingcheck-desc": "Facilite l’usâjo de les pâges d’arrevâ g·eolocalisâs.",
+	"landingcheck": "LandingCheck",
+	"landingcheck-nopage": "Gins de pâge trovâ en fassent la requéta."
 }

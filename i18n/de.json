@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "Kghbln",
-            "Metalhead64",
-            "Purodha"
-        ]
-    },
-    "landingcheck-desc": "Ermöglicht eine erleichterte Nutzung von mit geografischen Daten verknüpften Zielwebseiten in den jeweils verfügbaren Sprachen",
-    "landingcheck": "Websitezielprüfung",
-    "landingcheck-nopage": "Es wurden beim Ausführen der Anforderung keine Seiten gefunden."
+	"@metadata": {
+		"authors": [
+			"Kghbln",
+			"Metalhead64",
+			"Purodha"
+		]
+	},
+	"landingcheck-desc": "Ermöglicht eine erleichterte Nutzung von mit geografischen Daten verknüpften Zielwebseiten in den jeweils verfügbaren Sprachen",
+	"landingcheck": "Websitezielprüfung",
+	"landingcheck-nopage": "Es wurden beim Ausführen der Anforderung keine Seiten gefunden."
 }

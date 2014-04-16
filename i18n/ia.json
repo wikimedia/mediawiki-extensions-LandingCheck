@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "McDutchie"
-        ]
-    },
-    "landingcheck-desc": "Facilita le uso de paginas de arrivata specific al position geographic e lingua del usator",
-    "landingcheck": "Arrivata localisate",
-    "landingcheck-nopage": "Nulle pagina ha essite trovate durante le execution del requesta."
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"landingcheck-desc": "Facilita le uso de paginas de arrivata specific al position geographic e lingua del usator",
+	"landingcheck": "Arrivata localisate",
+	"landingcheck-nopage": "Nulle pagina ha essite trovate durante le execution del requesta."
 }

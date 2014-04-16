@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "SpeedyGonsales"
-        ]
-    },
-    "landingcheck-desc": "Omogućava uporabu geolokalizirane ciljne stranice",
-    "landingcheck": "Provjera ciljne stranice"
+	"@metadata": {
+		"authors": [
+			"SpeedyGonsales"
+		]
+	},
+	"landingcheck-desc": "Omogućava uporabu geolokalizirane ciljne stranice",
+	"landingcheck": "Provjera ciljne stranice"
 }

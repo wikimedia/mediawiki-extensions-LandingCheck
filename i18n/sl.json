@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Dbc334"
-        ]
-    },
-    "landingcheck-desc": "Omogoča uporabo jezikovno prilagojenih ciljnih strani glede na geolokacijo",
-    "landingcheck": "PreverjanjePristajališča",
-    "landingcheck-nopage": "Med izvedbo zahteve nismo našli nobene strani."
+	"@metadata": {
+		"authors": [
+			"Dbc334"
+		]
+	},
+	"landingcheck-desc": "Omogoča uporabo jezikovno prilagojenih ciljnih strani glede na geolokacijo",
+	"landingcheck": "PreverjanjePristajališča",
+	"landingcheck-nopage": "Med izvedbo zahteve nismo našli nobene strani."
 }

@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "HalanTul"
-        ]
-    },
-    "landingcheck-desc": "Сириттэн тутулуктаахтык тылбаастанар сорук-сирэйдэри туһаныыны чэпчэтэр",
-    "landingcheck": "LandingCheck"
+	"@metadata": {
+		"authors": [
+			"HalanTul"
+		]
+	},
+	"landingcheck-desc": "Сириттэн тутулуктаахтык тылбаастанар сорук-сирэйдэри туһаныыны чэпчэтэр",
+	"landingcheck": "LandingCheck"
 }

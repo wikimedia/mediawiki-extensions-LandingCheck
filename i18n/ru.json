@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Eugrus",
-            "Александр Сигачёв"
-        ]
-    },
-    "landingcheck-desc": "Облегчает использование геозависимых локализованных целевых страниц",
-    "landingcheck": "LandingCheck",
-    "landingcheck-nopage": "При выполнении запроса страницы не были обнаружены."
+	"@metadata": {
+		"authors": [
+			"Eugrus",
+			"Александр Сигачёв"
+		]
+	},
+	"landingcheck-desc": "Облегчает использование геозависимых локализованных целевых страниц",
+	"landingcheck": "LandingCheck",
+	"landingcheck-nopage": "При выполнении запроса страницы не были обнаружены."
 }

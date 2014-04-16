@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Minh Nguyen"
-        ]
-    },
-    "landingcheck-desc": "Cung cấp khả năng trình bày các trang đích đến bản địa hóa",
-    "landingcheck": "LandingCheck",
-    "landingcheck-nopage": "Không tìm thấy trang nào khi thực hiện yêu cầu."
+	"@metadata": {
+		"authors": [
+			"Minh Nguyen"
+		]
+	},
+	"landingcheck-desc": "Cung cấp khả năng trình bày các trang đích đến bản địa hóa",
+	"landingcheck": "LandingCheck",
+	"landingcheck-nopage": "Không tìm thấy trang nào khi thực hiện yêu cầu."
 }

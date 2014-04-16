@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Xuacu"
-        ]
-    },
-    "landingcheck-desc": "Facilita l'usu de páxines de destín con llocalización xeográfica traducíes",
-    "landingcheck": "Comprobación de destín",
-    "landingcheck-nopage": "Nun s'alcontró denguna páxina al procesar la solicitú."
+	"@metadata": {
+		"authors": [
+			"Xuacu"
+		]
+	},
+	"landingcheck-desc": "Facilita l'usu de páxines de destín con llocalización xeográfica traducíes",
+	"landingcheck": "Comprobación de destín",
+	"landingcheck-nopage": "Nun s'alcontró denguna páxina al procesar la solicitú."
 }

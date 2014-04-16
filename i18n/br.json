@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Fulup",
-            "Y-M D"
-        ]
-    },
-    "landingcheck-desc": "Aesaat a ra implij ar pajennoù emgavout geolec'helaet",
-    "landingcheck": "LandingCheck",
-    "landingcheck-nopage": "N'eus bet kavet pajenn ebet da-heul ar reked."
+	"@metadata": {
+		"authors": [
+			"Fulup",
+			"Y-M D"
+		]
+	},
+	"landingcheck-desc": "Aesaat a ra implij ar pajennoù emgavout geolec'helaet",
+	"landingcheck": "LandingCheck",
+	"landingcheck-nopage": "N'eus bet kavet pajenn ebet da-heul ar reked."
 }

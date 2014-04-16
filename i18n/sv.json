@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Ainali",
-            "WikiPhoenix"
-        ]
-    },
-    "landingcheck-desc": "Underlättar användningen av geografiskt riktade landningssidor",
-    "landingcheck": "LandingCheck",
-    "landingcheck-nopage": "Inga sidor hittades medan begäran utfördes."
+	"@metadata": {
+		"authors": [
+			"Ainali",
+			"WikiPhoenix"
+		]
+	},
+	"landingcheck-desc": "Underlättar användningen av geografiskt riktade landningssidor",
+	"landingcheck": "LandingCheck",
+	"landingcheck-nopage": "Inga sidor hittades medan begäran utfördes."
 }

@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Naudefj",
-            "පසිඳු කාවින්ද"
-        ]
-    },
-    "landingcheck-desc": "Fasiliteer die gebruik van \"geotargeted\" gelokaliseerde bestemmingsbladsye",
-    "landingcheck": "Landingskontrole",
-    "landingcheck-nopage": "Geen bladsye gevind is, terwyl die uitvoering van die versoek."
+	"@metadata": {
+		"authors": [
+			"Naudefj",
+			"පසිඳු කාවින්ද"
+		]
+	},
+	"landingcheck-desc": "Fasiliteer die gebruik van \"geotargeted\" gelokaliseerde bestemmingsbladsye",
+	"landingcheck": "Landingskontrole",
+	"landingcheck-nopage": "Geen bladsye gevind is, terwyl die uitvoering van die versoek."
 }

@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Dim Grits",
-            "Тест"
-        ]
-    },
-    "landingcheck-desc": "Полегшує використання геозалежних локалізованих цільових сторінок",
-    "landingcheck": "LandingCheck",
-    "landingcheck-nopage": "Сторінок не знайдено під час виконання запиту."
+	"@metadata": {
+		"authors": [
+			"Dim Grits",
+			"Тест"
+		]
+	},
+	"landingcheck-desc": "Полегшує використання геозалежних локалізованих цільових сторінок",
+	"landingcheck": "LandingCheck",
+	"landingcheck-nopage": "Сторінок не знайдено під час виконання запиту."
 }

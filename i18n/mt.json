@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Chrisportelli"
-        ]
-    },
-    "landingcheck": "LandingCheck",
-    "landingcheck-nopage": "L-ebda paġna ma nstabet waqt l-eżekuzzjoni tar-rikjesta."
+	"@metadata": {
+		"authors": [
+			"Chrisportelli"
+		]
+	},
+	"landingcheck": "LandingCheck",
+	"landingcheck-nopage": "L-ebda paġna ma nstabet waqt l-eżekuzzjoni tar-rikjesta."
 }

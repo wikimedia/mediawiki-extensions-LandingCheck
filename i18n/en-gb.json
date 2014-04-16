@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Reedy"
-        ]
-    },
-    "landingcheck-desc": "Facilitates the use of geotargeted localised landing pages"
+	"@metadata": {
+		"authors": [
+			"Reedy"
+		]
+	},
+	"landingcheck-desc": "Facilitates the use of geotargeted localised landing pages"
 }

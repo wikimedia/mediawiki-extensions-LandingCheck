@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "CERminator"
-        ]
-    },
-    "landingcheck-desc": "Omogućava korištenje lokalizovanje ciljne stranice povezane sa zemljom korisnika",
-    "landingcheck": "Provjera ciljne stranice"
+	"@metadata": {
+		"authors": [
+			"CERminator"
+		]
+	},
+	"landingcheck-desc": "Omogućava korištenje lokalizovanje ciljne stranice povezane sa zemljom korisnika",
+	"landingcheck": "Provjera ciljne stranice"
 }
