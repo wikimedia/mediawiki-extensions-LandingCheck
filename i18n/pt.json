@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"GoEThe",
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"Vitorvicentevalente"
 		]
 	},
 	"landingcheck-desc": "Facilita o uso de páginas de destino localizadas com segmentação geográfica",
-	"landingcheck": "Verificação de Destino (LandingCheck)"
+	"landingcheck": "Verificação de Destino (LandingCheck)",
+	"landingcheck-nopage": "Não foram encontradas páginas durante a realização do pedido."
 }
