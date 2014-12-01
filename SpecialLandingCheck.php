@@ -56,7 +56,15 @@ class SpecialLandingCheck extends SpecialPage {
 			$language = 'en';
 		}
 
-		// If no country was passed, try to do GeoIP lookup
+		// Use the GeoIP cookie if available.
+		if ( !$country ) {
+			$geoip = $request->getCookie( 'GeoIP', '' );
+			if ( $geoip ) {
+				$components = explode( ':', $geoip );
+				$country = $components[0];
+			}
+		}
+		// If no country was found yet, try to do GeoIP lookup
 		// Requires php5-geoip package
 		if ( !$country && function_exists( 'geoip_country_code_by_name' ) ) {
 			$ip = $request->getIP();
