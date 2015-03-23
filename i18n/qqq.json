@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Shirayuki",
-			"Yekrats"
+			"Yekrats",
+			"Umherirrender"
 		]
 	},
-	"landingcheck-desc": "{{desc|name=Landing Check|url=http://www.mediawiki.org/wiki/Extension:LandingCheck}}",
+	"landingcheck-desc": "{{desc|name=Landing Check|url=https://www.mediawiki.org/wiki/Extension:LandingCheck}}",
 	"landingcheck": "{{doc-special|LandingCheck}}\nThe name of the extension LandingCheck. See: http://www.mediawiki.org/wiki/Extension:LandingCheck",
 	"landingcheck-nopage": "Used as simple error message in [[Special:LandingCheck]]."
 }
