@@ -24,6 +24,11 @@ $specialPageAliases['arz'] = array(
 	'LandingCheck' => array( 'تحقق_الهدف' ),
 );
 
+/** Western Balochi (بلوچی رخشانی) */
+$specialPageAliases['bgn'] = array(
+	'LandingCheck' => array( 'ایربوتین_ئی_بررسی' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'LandingCheck' => array( 'Websitezielprüfung' ),
