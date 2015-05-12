@@ -19,7 +19,7 @@ $specialPageAliases['ar'] = array(
 	'LandingCheck' => array( 'تحقق_الهدف' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
+/** Egyptian Arabic (مصرى) */
 $specialPageAliases['arz'] = array(
 	'LandingCheck' => array( 'تحقق_الهدف' ),
 );
