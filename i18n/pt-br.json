@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Giro720"
+			"Giro720",
+			"Araceletorres"
 		]
 	},
 	"landingcheck-desc": "Facilita o uso de páginas de destino localizadas geodirecionadas",
-	"landingcheck": "LandingCheck"
+	"landingcheck": "LandingCheck",
+	"landingcheck-nopage": "Nenhuma página foi encontrada ao realizar a solicitação."
 }
