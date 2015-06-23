@@ -26,7 +26,6 @@ $wgMessagesDirs['LandingCheck'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['LandingCheck'] = $dir . 'LandingCheck.i18n.php';
 $wgExtensionMessagesFiles['LandingCheckAlias'] = $dir . 'LandingCheck.alias.php';
 $wgSpecialPages['LandingCheck'] = 'SpecialLandingCheck';
-$wgSpecialPageGroups['LandingCheck'] = 'contribution';
 
 // If there are any countries for which the country page should be the fallback rather than a
 // language page, add its country code to this array.

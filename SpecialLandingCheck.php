@@ -263,4 +263,8 @@ class SpecialLandingCheck extends SpecialPage {
 		}
 		return $this->localServerType;
 	}
+
+	protected function getGroupName() {
+		return 'contribution';
+	}
 }
