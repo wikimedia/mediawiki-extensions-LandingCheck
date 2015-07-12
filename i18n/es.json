@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Armando-Martin",
-			"MetalBrasil"
+			"MetalBrasil",
+			"Macofe"
 		]
 	},
-	"landingcheck-desc": "Facilita el uso de páginas de aterrizaje localizada localización geográfica",
+	"landingcheck-desc": "Facilita el uso de páginas de aterrizaje localizada geográficamente",
 	"landingcheck": "LandingCheck",
 	"landingcheck-nopage": "No se encontraron páginas al realizar la solicitud."
 }
