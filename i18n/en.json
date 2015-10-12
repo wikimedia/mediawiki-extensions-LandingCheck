@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Ryan Kaldari"
-        ]
-    },
-    "landingcheck-desc": "Facilitates the use of geotargeted localized landing pages",
-    "landingcheck": "LandingCheck",
-    "landingcheck-nopage": "No pages were found while performing the request."
+	"@metadata": {
+		"authors": [
+			"Ryan Kaldari"
+		]
+	},
+	"landingcheck-desc": "Facilitates the use of geotargeted localized landing pages",
+	"landingcheck": "LandingCheck",
+	"landingcheck-nopage": "No pages were found while performing the request."
 }
