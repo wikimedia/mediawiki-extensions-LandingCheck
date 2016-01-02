@@ -1,0 +1,31 @@
+{
+	"name": "LandingCheck",
+	"version": "2.1.0",
+	"author": [
+		"Ryan Kaldari",
+		"Arthur Richards"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:LandingCheck",
+	"descriptionmsg": "landingcheck-desc",
+	"type": "specialpage",
+	"SpecialPages": {
+		"LandingCheck": "SpecialLandingCheck"
+	},
+	"MessagesDirs": {
+		"LandingCheck": [
+			"i18n"
+		]
+	},
+	"ExtensionMessagesFiles": {
+		"LandingCheckAlias": "LandingCheck.alias.php"
+	},
+	"AutoloadClasses": {
+		"SpecialLandingCheck": "SpecialLandingCheck.php"
+	},
+	"config": {
+		"PriorityCountries": [],
+		"LandingCheckPriorityURLBase": null,
+		"LandingCheckNormalURLBase": null
+	},
+	"manifest_version": 1
+}
