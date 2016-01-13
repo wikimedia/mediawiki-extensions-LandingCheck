@@ -16,6 +16,9 @@
 			"i18n"
 		]
 	},
+	"ExtensionMessagesFiles": {
+		"LandingCheckAlias": "LandingCheck.alias.php"
+	},
 	"AutoloadClasses": {
 		"SpecialLandingCheck": "SpecialLandingCheck.php"
 	},
