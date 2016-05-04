@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Reedy"
+			"Reedy",
+			"Andibing"
 		]
 	},
-	"landingcheck-desc": "Facilitates the use of geotargeted localised landing pages"
+	"landingcheck-desc": "Facilitates the use of geotargeted localised landing pages",
+	"landingcheck": "LandingCheck",
+	"landingcheck-nopage": "No pages were found while performing the request."
 }
