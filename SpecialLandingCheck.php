@@ -5,14 +5,14 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 }
 
 /**
- * This checks to see if a version of a landing page exists for the user's language and country. 
- * If not, it looks for a version localized for the user's language. If that doesn't exist either, 
+ * This checks to see if a version of a landing page exists for the user's language and country.
+ * If not, it looks for a version localized for the user's language. If that doesn't exist either,
  * it looks for the English version. If any of those exist, it then redirects the user.
  */
 class SpecialLandingCheck extends SpecialPage {
 	protected $localServerType = null;
 	/**
-	 * If basic is set to true, do a local redirect, ignore priority, and don't pass tracking 
+	 * If basic is set to true, do a local redirect, ignore priority, and don't pass tracking
 	 * params. This is for non-fundraising links that just need localization.
 	 *
 	 * @var boolean $basic
@@ -27,12 +27,12 @@ class SpecialLandingCheck extends SpecialPage {
 	 * @var string $anchor
 	 */
 	protected $anchor = null;
-	
+
 	public function __construct() {
 		// Register special page
 		parent::__construct( 'LandingCheck' );
 	}
-	
+
 	public function execute( $sub ) {
 		global $wgPriorityCountries;
 		$request = $this->getRequest();
@@ -41,7 +41,7 @@ class SpecialLandingCheck extends SpecialPage {
 
 		$language = 'en';
 		$path = explode( '/', $sub );
-		if ( Language::isValidCode( $path[count($path) - 1] ) ) {
+		if ( Language::isValidCode( $path[count( $path ) - 1] ) ) {
 			$language = $sub;
 		}
 
@@ -49,10 +49,10 @@ class SpecialLandingCheck extends SpecialPage {
 		$language = $request->getVal( 'language', $language );
 		$this->basic = $request->getBool( 'basic' );
 		$country = $request->getVal( 'country' );
-		$this->anchor = $request->getVal ( 'anchor' );
+		$this->anchor = $request->getVal( 'anchor' );
 
 		// if the language is false-ish, set to default
-		if( !$language ) {
+		if ( !$language ) {
 			$language = 'en';
 		}
 
@@ -75,25 +75,25 @@ class SpecialLandingCheck extends SpecialPage {
 		if ( !$country ) {
 			$country = 'US'; // Default
 		}
-		
+
 		// determine if we are fulfilling a request for a priority country
 		$priority = in_array( $country, $wgPriorityCountries );
 
 		// handle the actual redirect
 		$this->routeRedirect( $country, $language, $priority );
 	}
-	
+
 	/**
 	 * Determine whether this server is configured as the priority or normal server
-	 * 
+	 *
 	 * If this is neither the priority nor normal server, assumes 'local' - meaning
 	 * this server should be handling the request.
 	 */
 	public function determineLocalServerType() {
 		global $wgServer, $wgLandingCheckPriorityURLBase, $wgLandingCheckNormalURLBase;
-		
+
 		$localServerDetails = wfParseUrl( $wgServer );
-		
+
 		// The following checks are necessary due to a bug in wfParseUrl that was fixed in r94352.
 		if ( $wgLandingCheckPriorityURLBase ) {
 			$priorityServerDetails = wfParseUrl( $wgLandingCheckPriorityURLBase );
@@ -105,9 +105,7 @@ class SpecialLandingCheck extends SpecialPage {
 		} else {
 			$normalServerDetails = false;
 		}
-		//$priorityServerDetails = wfParseUrl( $wgLandingCheckPriorityURLBase );
-		//$normalServerDetails = wfParseUrl( $wgLandingCheckNormalURLBase );
-		
+
 		if ( $localServerDetails[ 'host' ] == $priorityServerDetails[ 'host' ] ) {
 			return 'priority';
 		} elseif ( $localServerDetails[ 'host' ] == $normalServerDetails[ 'host' ] ) {
@@ -116,7 +114,7 @@ class SpecialLandingCheck extends SpecialPage {
 			return 'local';
 		}
 	}
-	
+
 	/**
 	 * Route the request to the appropriate redirect method
 	 * @param string $country
@@ -125,28 +123,27 @@ class SpecialLandingCheck extends SpecialPage {
 	 */
 	public function routeRedirect( $country, $language, $priority ) {
 		$localServerType = $this->getLocalServerType();
-		
+
 		if ( $this->basic ) {
 			$this->localRedirect( $country, $language, false );
-			
+
 		} elseif ( $localServerType == 'local' ) {
 			$this->localRedirect( $country, $language, $priority );
-			
+
 		} elseif ( $priority && $localServerType == 'priority' ) {
 			$this->localRedirect( $country, $language, $priority );
 
 		} elseif ( !$priority && $localServerType == 'normal' ) {
 			$this->localRedirect( $country, $language, $priority );
-		
+
 		} else {
 			$this->externalRedirect( $priority );
-		
 		}
 	}
-	
+
 	/**
 	 * Handle an external redirect
-	 * 
+	 *
 	 * The external redirect should point to another instance of LandingCheck
 	 * which will ultimately handle the request.
 	 * @param bool $priority
@@ -156,39 +153,38 @@ class SpecialLandingCheck extends SpecialPage {
 
 		if ( $priority ) {
 			$urlBase = $wgLandingCheckPriorityURLBase;
-		
+
 		} else {
 			$urlBase = $wgLandingCheckNormalURLBase;
-		
 		}
-		
+
 		$query = $this->getRequest()->getValues();
 		unset( $query[ 'title' ] );
-		
+
 		$url = wfAppendQuery( $urlBase, $query );
 		$this->getOutput()->redirect( $url );
 	}
-	
+
 	/**
-	 * Handle local redirect 
+	 * Handle local redirect
 	 * @param bool $priority Whether or not we handle this request on behalf of a priority country
 	 */
-	public function localRedirect( $country, $language, $priority=false ) {
+	public function localRedirect( $country, $language, $priority = false ) {
 		$out = $this->getOutput();
 		$request = $this->getRequest();
 		$landingPage = $request->getVal( 'landing_page', 'Donate' );
-		
+
 		/**
 		 * Construct new query string for tracking
-		 * 
-		 * Note that both 'language' and 'uselang' get set to 
-		 * 	$request->getVal( 'language', 'en')
+		 *
+		 * Note that both 'language' and 'uselang' get set to
+		 * 	$request->getVal( 'language', 'en' )
 		 * This is wacky, yet by design! This is a unique oddity to fundraising
 		 * stuff, but CentralNotice converts wgUserLanguage to 'language' rather than
 		 * 'uselang'. Ultimately, this is something that should probably be rectified
 		 * in CentralNotice. Until then, this is what we've got.
 		 */
-		$tracking = wfArrayToCgi( array(
+		$tracking = wfArrayToCgi( [
 			'utm_source' => $request->getVal( 'utm_source' ),
 			'utm_medium' => $request->getVal( 'utm_medium' ),
 			'utm_campaign' => $request->getVal( 'utm_campaign' ),
@@ -197,35 +193,35 @@ class SpecialLandingCheck extends SpecialPage {
 			'uselang' => $language, // for {{int:xxx}} rendering
 			'country' => $country,
 			'referrer' => $request->getHeader( 'referer' )
-		) );
-		
+		] );
+
 		if ( $priority ) {
 			// Build array of landing pages to check for
-			$targetTexts = array(
+			$targetTexts = [
 				$landingPage . '/' . $country . '/' . $language,
 				$landingPage . '/' . $country,
 				$landingPage . '/' . $language
-			);
+			];
 		} else {
 			// Build array of landing pages to check for
-			$targetTexts = array(
+			$targetTexts = [
 				$landingPage . '/' . $language . '/' . $country,
 				$landingPage . '/' . $language
-			);
+			];
 			// Add fallback languages
 			$fallbacks = Language::getFallbacksFor( $language );
 			foreach ( $fallbacks as $fallback ) {
 				$targetTexts[] = $landingPage . '/' . $fallback;
 			}
 		}
-		
+
 		// Go through the possible landing pages and redirect the user as soon as one is found to exist
 		foreach ( $targetTexts as $targetText ) {
 			$target = Title::newFromText( $targetText );
 			if ( $target && $target->isKnown() && $target->getNamespace() == NS_MAIN ) {
 				if ( $this->basic ) {
 					if ( isset( $this->anchor ) ) {
-						$out->redirect ( $target->getLocalURL().'#'.$this->anchor );
+						$out->redirect( $target->getLocalURL() . '#' . $this->anchor );
 					} else {
 						$out->redirect( $target->getLocalURL() );
 					}
@@ -233,18 +229,18 @@ class SpecialLandingCheck extends SpecialPage {
 					$out->redirect( $target->getLocalURL( $tracking ) );
 				}
 				return;
-			} 
+			}
 		}
 
-		# Output a simple error message if no pages were found
+		// Output a simple error message if no pages were found
 		$this->setHeaders();
 		$this->outputHeader();
 		$out->addWikiMsg( 'landingcheck-nopage' );
 	}
-	
+
 	/**
 	 * Setter for $this->localServerType
-	 * @param string $type 
+	 * @param string $type
 	 */
 	public function setLocalServerType( $type = null ) {
 		if ( !$type ) {
