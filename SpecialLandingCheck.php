@@ -56,6 +56,15 @@ class SpecialLandingCheck extends SpecialPage {
 			$language = 'en';
 		}
 
+		// if it's not a supported language, but the section before a
+		// dash or underscore is, use that
+		if ( !Language::isSupportedLanguage( $language ) ) {
+			$parts = preg_split( '/[-_]/', $language );
+			if ( Language::isSupportedLanguage( $parts[0] ) ) {
+				$language = $parts[0];
+			}
+		}
+
 		// Use the GeoIP cookie if available.
 		if ( !$country ) {
 			$geoip = $request->getCookie( 'GeoIP', '' );
