@@ -15,7 +15,7 @@ class SpecialLandingCheck extends SpecialPage {
 	 * If basic is set to true, do a local redirect, ignore priority, and don't pass tracking
 	 * params. This is for non-fundraising links that just need localization.
 	 *
-	 * @var boolean $basic
+	 * @var bool $basic
 	 */
 	protected $basic = false;
 
@@ -97,6 +97,7 @@ class SpecialLandingCheck extends SpecialPage {
 	 *
 	 * If this is neither the priority nor normal server, assumes 'local' - meaning
 	 * this server should be handling the request.
+	 * @return string
 	 */
 	public function determineLocalServerType() {
 		global $wgServer, $wgLandingCheckPriorityURLBase, $wgLandingCheckNormalURLBase;
@@ -176,6 +177,8 @@ class SpecialLandingCheck extends SpecialPage {
 
 	/**
 	 * Handle local redirect
+	 * @param string $country
+	 * @param string $language
 	 * @param bool $priority Whether or not we handle this request on behalf of a priority country
 	 */
 	public function localRedirect( $country, $language, $priority = false ) {
@@ -261,6 +264,7 @@ class SpecialLandingCheck extends SpecialPage {
 
 	/**
 	 * Getter for $this->localServerType
+	 * @return string
 	 */
 	public function getLocalServerType() {
 		if ( !$this->localServerType ) {
