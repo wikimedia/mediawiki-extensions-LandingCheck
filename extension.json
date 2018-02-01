@@ -6,7 +6,7 @@
 		"Arthur Richards"
 	],
 	"url": "https://www.mediawiki.org/wiki/Extension:LandingCheck",
-	"license-name": "GPL-2.0+",
+	"license-name": "GPL-2.0-or-later",
 	"descriptionmsg": "landingcheck-desc",
 	"type": "specialpage",
 	"SpecialPages": {
