@@ -252,7 +252,7 @@ class SpecialLandingCheck extends SpecialPage {
 
 	/**
 	 * Setter for $this->localServerType
-	 * @param string $type
+	 * @param string|null $type
 	 */
 	public function setLocalServerType( $type = null ) {
 		if ( !$type ) {
