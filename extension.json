@@ -21,7 +21,7 @@
 		"LandingCheckAlias": "LandingCheck.alias.php"
 	},
 	"AutoloadClasses": {
-		"SpecialLandingCheck": "SpecialLandingCheck.php"
+		"SpecialLandingCheck": "includes/SpecialLandingCheck.php"
 	},
 	"config": {
 		"PriorityCountries": [],
