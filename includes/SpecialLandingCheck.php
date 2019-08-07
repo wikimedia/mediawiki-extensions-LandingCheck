@@ -1,8 +1,4 @@
 <?php
-if ( !defined( 'MEDIAWIKI' ) ) {
-	echo "LandingCheck extension\n";
-	exit( 1 );
-}
 
 /**
  * This checks to see if a version of a landing page exists for the user's language and country.
