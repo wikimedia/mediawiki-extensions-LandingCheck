@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"landingcheck-desc": "Omogućava korištenje mjestoprilagođenih i prevedenih ciljne stranice u zavisnosti sa zemljom korisnika",
+	"landingcheck": "Provjera ciljne stranice",
+	"landingcheck-nopage": "Vršeći radnju nisam našao nijednu stranicu."
+}
