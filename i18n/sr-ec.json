@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Rancher"
+			"Rancher",
+			"Zoranzoki21"
 		]
 	},
+	"landingcheck-desc": "Олакшава употребу локализоцаних одредишних страница са географским циљевима",
 	"landingcheck": "Провера циљне странице",
 	"landingcheck-nopage": "Вршећи захтев није пронађена ниједна страница."
 }
