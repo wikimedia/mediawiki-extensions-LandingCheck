@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK"
+		]
+	},
+	"landingcheck-desc": "Coğrafi hedefli yerelleştirilmiş açılış sayfalarının kullanımını kolaylaştırır",
+	"landingcheck": "LandingCheck",
+	"landingcheck-nopage": "İstek yapılırken sayfa bulunamadı."
+}
