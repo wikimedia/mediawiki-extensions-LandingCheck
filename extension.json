@@ -9,6 +9,9 @@
 	"license-name": "GPL-2.0-or-later",
 	"descriptionmsg": "landingcheck-desc",
 	"type": "specialpage",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
 	"SpecialPages": {
 		"LandingCheck": "SpecialLandingCheck"
 	},

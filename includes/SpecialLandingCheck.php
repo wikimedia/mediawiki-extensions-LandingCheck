@@ -5,6 +5,9 @@
  * If not, it looks for a version localized for the user's language. If that doesn't exist either,
  * it looks for the English version. If any of those exist, it then redirects the user.
  */
+
+use Wikimedia\IPUtils;
+
 class SpecialLandingCheck extends SpecialPage {
 	protected $localServerType = null;
 	/**
@@ -73,7 +76,7 @@ class SpecialLandingCheck extends SpecialPage {
 		// Requires php5-geoip package
 		if ( !$country && function_exists( 'geoip_country_code_by_name' ) ) {
 			$ip = $request->getIP();
-			if ( IP::isValid( $ip ) ) {
+			if ( IPUtils::isValid( $ip ) ) {
 				$country = geoip_country_code_by_name( $ip );
 			}
 		}
