@@ -103,6 +103,10 @@ class SpecialLandingCheck extends SpecialPage {
 
 		$localServerDetails = wfParseUrl( $wgServer );
 
+		if ( $localServerDetails === false ) {
+			return 'local';
+		}
+
 		// The following checks are necessary due to a bug in wfParseUrl that was fixed in r94352.
 		if ( $wgLandingCheckPriorityURLBase ) {
 			$priorityServerDetails = wfParseUrl( $wgLandingCheckPriorityURLBase );
@@ -115,13 +119,21 @@ class SpecialLandingCheck extends SpecialPage {
 			$normalServerDetails = false;
 		}
 
-		if ( $localServerDetails[ 'host' ] == $priorityServerDetails[ 'host' ] ) {
+		if (
+			$priorityServerDetails !== false
+			&& $localServerDetails[ 'host' ] == $priorityServerDetails[ 'host' ]
+		) {
 			return 'priority';
-		} elseif ( $localServerDetails[ 'host' ] == $normalServerDetails[ 'host' ] ) {
-			return 'normal';
-		} else {
-			return 'local';
 		}
+
+		if (
+			$normalServerDetails !== false
+			&& $localServerDetails[ 'host' ] == $normalServerDetails[ 'host' ]
+		) {
+			return 'normal';
+		}
+
+		return 'local';
 	}
 
 	/**
