@@ -32,6 +32,9 @@ class SpecialLandingCheck extends SpecialPage {
 		parent::__construct( 'LandingCheck' );
 	}
 
+	/**
+	 * @param string $sub
+	 */
 	public function execute( $sub ) {
 		global $wgPriorityCountries;
 		$request = $this->getRequest();
