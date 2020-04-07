@@ -1,5 +1,7 @@
 {
-	"@metadata": [],
+	"@metadata": {
+		"authors": []
+	},
 	"landingcheck-desc": "Olakšava upotrebu lokalizocanih odredišnih stranica sa geografskim ciljevima",
 	"landingcheck": "Provera ciljne stranice",
 	"landingcheck-nopage": "Vršeći zahtev nije pronađena nijedna stranica."
