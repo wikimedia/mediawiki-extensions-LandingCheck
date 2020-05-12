@@ -27,9 +27,15 @@
 		"SpecialLandingCheck": "includes/SpecialLandingCheck.php"
 	},
 	"config": {
-		"PriorityCountries": [],
-		"LandingCheckPriorityURLBase": null,
-		"LandingCheckNormalURLBase": null
+		"PriorityCountries": {
+			"value": []
+		},
+		"LandingCheckPriorityURLBase": {
+			"value": null
+		},
+		"LandingCheckNormalURLBase": {
+			"value": null
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }
