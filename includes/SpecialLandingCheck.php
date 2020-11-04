@@ -14,7 +14,7 @@ class SpecialLandingCheck extends SpecialPage {
 	 * If basic is set to true, do a local redirect, ignore priority, and don't pass tracking
 	 * params. This is for non-fundraising links that just need localization.
 	 *
-	 * @var bool $basic
+	 * @var bool
 	 */
 	protected $basic = false;
 
@@ -23,7 +23,7 @@ class SpecialLandingCheck extends SpecialPage {
 	 * position the resulting page. This is currently used only for non-fundraising links that need
 	 * localization and therefore is only checked if basic (above) is true.
 	 *
-	 * @var string $anchor
+	 * @var string
 	 */
 	protected $anchor = null;
 
