@@ -20,10 +20,14 @@
 			"i18n"
 		]
 	},
+	"Hooks": {
+		"Language::getMessagesFileName": "LandingCheckHooks::onGetMessagesFileName"
+	},
 	"ExtensionMessagesFiles": {
 		"LandingCheckAlias": "LandingCheck.alias.php"
 	},
 	"AutoloadClasses": {
+		"LandingCheckHooks": "includes/LandingCheckHooks.php",
 		"SpecialLandingCheck": "includes/SpecialLandingCheck.php"
 	},
 	"config": {
