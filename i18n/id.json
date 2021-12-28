@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"IvanLanin"
+			"IvanLanin",
+			"Daud I.F. Argana"
 		]
 	},
 	"landingcheck-desc": "Memfasilitasi penggunaan halaman arahan bertarget geografis lokal",
-	"landingcheck": "LandingCheck"
+	"landingcheck": "LandingCheck",
+	"landingcheck-nopage": "Tidak ada halaman yang ditemukan ketika melaksanakan permintaan ini."
 }
