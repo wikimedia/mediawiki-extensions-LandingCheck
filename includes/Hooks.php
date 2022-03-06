@@ -1,6 +1,8 @@
 <?php
 
-class LandingCheckHooks {
+namespace Mediawiki\Extension\LandingCheck;
+
+class Hooks {
 
 	/**
 	 * Register es-419 as a language supported by this extension but not by
@@ -12,8 +14,7 @@ class LandingCheckHooks {
 	 */
 	public static function onGetMessagesFileName( $code, &$file ) {
 		if ( $code === 'es-419' ) {
-			$file = __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR .
-				'messages' . DIRECTORY_SEPARATOR . 'MessagesEs_419.php';
+			$file = dirname( __DIR__ ) . '/messages/MessagesEs_419.php';
 		}
 	}
 }

@@ -13,7 +13,7 @@
 		"MediaWiki": ">= 1.35.0"
 	},
 	"SpecialPages": {
-		"LandingCheck": "SpecialLandingCheck"
+		"LandingCheck": "Mediawiki\\Extension\\LandingCheck\\SpecialLandingCheck"
 	},
 	"MessagesDirs": {
 		"LandingCheck": [
@@ -21,14 +21,13 @@
 		]
 	},
 	"Hooks": {
-		"Language::getMessagesFileName": "LandingCheckHooks::onGetMessagesFileName"
+		"Language::getMessagesFileName": "Mediawiki\\Extension\\LandingCheck\\Hooks::onGetMessagesFileName"
 	},
 	"ExtensionMessagesFiles": {
 		"LandingCheckAlias": "LandingCheck.alias.php"
 	},
-	"AutoloadClasses": {
-		"LandingCheckHooks": "includes/LandingCheckHooks.php",
-		"SpecialLandingCheck": "includes/SpecialLandingCheck.php"
+	"AutoloadNamespaces": {
+		"Mediawiki\\Extension\\LandingCheck\\": "includes/"
 	},
 	"config": {
 		"PriorityCountries": {

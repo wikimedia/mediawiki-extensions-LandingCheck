@@ -6,6 +6,11 @@
  * it looks for the English version. If any of those exist, it then redirects the user.
  */
 
+namespace Mediawiki\Extension\LandingCheck;
+
+use Language;
+use SpecialPage;
+use Title;
 use Wikimedia\IPUtils;
 
 class SpecialLandingCheck extends SpecialPage {
