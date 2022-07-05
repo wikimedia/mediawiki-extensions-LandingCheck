@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
-			"Peter17"
+			"Peter17",
+			"Verdy p"
 		]
 	},
-	"landingcheck-desc": "Facilite l’utilisation des pages d’arrivée géolocalisées",
+	"landingcheck-desc": "Facilite l’utilisation de pages d’arrivée géolocalisées",
 	"landingcheck": "LandingCheck",
 	"landingcheck-nopage": "Aucune page trouvée en effectuant la requête."
 }
