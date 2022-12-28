@@ -9,11 +9,15 @@
 namespace Mediawiki\Extension\LandingCheck;
 
 use Language;
+use MediaWiki\Languages\LanguageNameUtils;
 use SpecialPage;
 use Title;
 use Wikimedia\IPUtils;
 
 class SpecialLandingCheck extends SpecialPage {
+	/** @var LanguageNameUtils */
+	private $languageNameUtils;
+
 	protected $localServerType = null;
 	/**
 	 * If basic is set to true, do a local redirect, ignore priority, and don't pass tracking
@@ -32,9 +36,15 @@ class SpecialLandingCheck extends SpecialPage {
 	 */
 	protected $anchor = null;
 
-	public function __construct() {
+	/**
+	 * @param LanguageNameUtils $languageNameUtils
+	 */
+	public function __construct(
+		LanguageNameUtils $languageNameUtils
+	) {
 		// Register special page
 		parent::__construct( 'LandingCheck' );
+		$this->languageNameUtils = $languageNameUtils;
 	}
 
 	/**
@@ -48,7 +58,7 @@ class SpecialLandingCheck extends SpecialPage {
 
 		$language = 'en';
 		$path = explode( '/', $sub );
-		if ( Language::isValidCode( $path[count( $path ) - 1] ) ) {
+		if ( $this->languageNameUtils->isValidCode( $path[count( $path ) - 1] ) ) {
 			$language = $sub;
 		}
 
@@ -65,9 +75,9 @@ class SpecialLandingCheck extends SpecialPage {
 
 		// if it's not a supported language, but the section before a
 		// dash or underscore is, use that
-		if ( !Language::isSupportedLanguage( $language ) ) {
+		if ( !$this->languageNameUtils->isSupportedLanguage( $language ) ) {
 			$parts = preg_split( '/[-_]/', $language );
-			if ( Language::isSupportedLanguage( $parts[0] ) ) {
+			if ( $this->languageNameUtils->isSupportedLanguage( $parts[0] ) ) {
 				$language = $parts[0];
 			}
 		}

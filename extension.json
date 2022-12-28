@@ -13,7 +13,12 @@
 		"MediaWiki": ">= 1.35.0"
 	},
 	"SpecialPages": {
-		"LandingCheck": "Mediawiki\\Extension\\LandingCheck\\SpecialLandingCheck"
+		"LandingCheck": {
+			"class": "Mediawiki\\Extension\\LandingCheck\\SpecialLandingCheck",
+			"services": [
+				"LanguageNameUtils"
+			]
+		}
 	},
 	"MessagesDirs": {
 		"LandingCheck": [
