@@ -10,6 +10,7 @@ namespace Mediawiki\Extension\LandingCheck;
 
 use MediaWiki\Languages\LanguageFallback;
 use MediaWiki\Languages\LanguageNameUtils;
+use MediaWiki\Utils\UrlUtils;
 use SpecialPage;
 use Title;
 use Wikimedia\IPUtils;
@@ -20,6 +21,9 @@ class SpecialLandingCheck extends SpecialPage {
 
 	/** @var LanguageFallback */
 	private $languageFallback;
+
+	/** @var UrlUtils */
+	private $urlUtils;
 
 	protected $localServerType = null;
 	/**
@@ -42,15 +46,18 @@ class SpecialLandingCheck extends SpecialPage {
 	/**
 	 * @param LanguageNameUtils $languageNameUtils
 	 * @param LanguageFallback $languageFallback
+	 * @param UrlUtils $urlUtils
 	 */
 	public function __construct(
 		LanguageNameUtils $languageNameUtils,
-		LanguageFallback $languageFallback
+		LanguageFallback $languageFallback,
+		UrlUtils $urlUtils
 	) {
 		// Register special page
 		parent::__construct( 'LandingCheck' );
 		$this->languageNameUtils = $languageNameUtils;
 		$this->languageFallback = $languageFallback;
+		$this->urlUtils = $urlUtils;
 	}
 
 	/**
@@ -125,36 +132,28 @@ class SpecialLandingCheck extends SpecialPage {
 	public function determineLocalServerType() {
 		global $wgServer, $wgLandingCheckPriorityURLBase, $wgLandingCheckNormalURLBase;
 
-		$localServerDetails = wfParseUrl( $wgServer );
+		$localServerDetails = $this->urlUtils->parse( $wgServer );
 
-		if ( $localServerDetails === false ) {
+		if ( $localServerDetails === null ) {
 			return 'local';
 		}
 
-		// The following checks are necessary due to a bug in wfParseUrl that was fixed in r94352.
-		if ( $wgLandingCheckPriorityURLBase ) {
-			$priorityServerDetails = wfParseUrl( $wgLandingCheckPriorityURLBase );
-		} else {
-			$priorityServerDetails = false;
-		}
-		if ( $wgLandingCheckNormalURLBase ) {
-			$normalServerDetails = wfParseUrl( $wgLandingCheckNormalURLBase );
-		} else {
-			$normalServerDetails = false;
+		if ( $wgLandingCheckPriorityURLBase !== null ) {
+			$priorityServerDetails = $this->urlUtils->parse( $wgLandingCheckPriorityURLBase );
+			if ( $priorityServerDetails !== null
+				&& $localServerDetails[ 'host' ] === $priorityServerDetails[ 'host' ]
+			) {
+				return 'priority';
+			}
 		}
 
-		if (
-			$priorityServerDetails !== false
-			&& $localServerDetails[ 'host' ] == $priorityServerDetails[ 'host' ]
-		) {
-			return 'priority';
-		}
-
-		if (
-			$normalServerDetails !== false
-			&& $localServerDetails[ 'host' ] == $normalServerDetails[ 'host' ]
-		) {
-			return 'normal';
+		if ( $wgLandingCheckNormalURLBase !== null ) {
+			$normalServerDetails = $this->urlUtils->parse( $wgLandingCheckNormalURLBase );
+			if ( $normalServerDetails !== null
+				&& $localServerDetails[ 'host' ] === $normalServerDetails[ 'host' ]
+			) {
+				return 'normal';
+			}
 		}
 
 		return 'local';
@@ -206,6 +205,7 @@ class SpecialLandingCheck extends SpecialPage {
 		$query = $this->getRequest()->getValues();
 		unset( $query[ 'title' ] );
 
+		// @phan-suppress-next-line PhanTypeMismatchArgument urlBase always not null
 		$url = wfAppendQuery( $urlBase, $query );
 		$this->getOutput()->redirect( $url );
 	}
