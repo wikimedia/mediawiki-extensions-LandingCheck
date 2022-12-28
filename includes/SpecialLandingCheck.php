@@ -8,7 +8,7 @@
 
 namespace Mediawiki\Extension\LandingCheck;
 
-use Language;
+use MediaWiki\Languages\LanguageFallback;
 use MediaWiki\Languages\LanguageNameUtils;
 use SpecialPage;
 use Title;
@@ -17,6 +17,9 @@ use Wikimedia\IPUtils;
 class SpecialLandingCheck extends SpecialPage {
 	/** @var LanguageNameUtils */
 	private $languageNameUtils;
+
+	/** @var LanguageFallback */
+	private $languageFallback;
 
 	protected $localServerType = null;
 	/**
@@ -38,13 +41,16 @@ class SpecialLandingCheck extends SpecialPage {
 
 	/**
 	 * @param LanguageNameUtils $languageNameUtils
+	 * @param LanguageFallback $languageFallback
 	 */
 	public function __construct(
-		LanguageNameUtils $languageNameUtils
+		LanguageNameUtils $languageNameUtils,
+		LanguageFallback $languageFallback
 	) {
 		// Register special page
 		parent::__construct( 'LandingCheck' );
 		$this->languageNameUtils = $languageNameUtils;
+		$this->languageFallback = $languageFallback;
 	}
 
 	/**
@@ -250,7 +256,7 @@ class SpecialLandingCheck extends SpecialPage {
 				$landingPage . '/' . $language
 			];
 			// Add fallback languages
-			$fallbacks = Language::getFallbacksFor( $language );
+			$fallbacks = $this->languageFallback->getAll( $language );
 			foreach ( $fallbacks as $fallback ) {
 				$targetTexts[] = $landingPage . '/' . $fallback;
 			}

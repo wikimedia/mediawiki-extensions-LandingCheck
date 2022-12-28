@@ -16,7 +16,8 @@
 		"LandingCheck": {
 			"class": "Mediawiki\\Extension\\LandingCheck\\SpecialLandingCheck",
 			"services": [
-				"LanguageNameUtils"
+				"LanguageNameUtils",
+				"LanguageFallback"
 			]
 		}
 	},
