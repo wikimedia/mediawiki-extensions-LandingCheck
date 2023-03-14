@@ -10,7 +10,7 @@
 	"descriptionmsg": "landingcheck-desc",
 	"type": "specialpage",
 	"requires": {
-		"MediaWiki": ">= 1.39.0"
+		"MediaWiki": ">= 1.40.0"
 	},
 	"SpecialPages": {
 		"LandingCheck": {
