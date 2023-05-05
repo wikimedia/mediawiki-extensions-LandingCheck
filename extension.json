@@ -14,7 +14,7 @@
 	},
 	"SpecialPages": {
 		"LandingCheck": {
-			"class": "Mediawiki\\Extension\\LandingCheck\\SpecialLandingCheck",
+			"class": "MediaWiki\\Extension\\LandingCheck\\SpecialLandingCheck",
 			"services": [
 				"LanguageNameUtils",
 				"LanguageFallback",
@@ -28,13 +28,13 @@
 		]
 	},
 	"Hooks": {
-		"Language::getMessagesFileName": "Mediawiki\\Extension\\LandingCheck\\Hooks::onGetMessagesFileName"
+		"Language::getMessagesFileName": "MediaWiki\\Extension\\LandingCheck\\Hooks::onGetMessagesFileName"
 	},
 	"ExtensionMessagesFiles": {
 		"LandingCheckAlias": "LandingCheck.alias.php"
 	},
 	"AutoloadNamespaces": {
-		"Mediawiki\\Extension\\LandingCheck\\": "includes/"
+		"MediaWiki\\Extension\\LandingCheck\\": "includes/"
 	},
 	"config": {
 		"PriorityCountries": {

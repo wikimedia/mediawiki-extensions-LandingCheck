@@ -6,7 +6,7 @@
  * it looks for the English version. If any of those exist, it then redirects the user.
  */
 
-namespace Mediawiki\Extension\LandingCheck;
+namespace MediaWiki\Extension\LandingCheck;
 
 use MediaWiki\Languages\LanguageFallback;
 use MediaWiki\Languages\LanguageNameUtils;

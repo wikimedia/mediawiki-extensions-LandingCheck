@@ -1,6 +1,6 @@
 <?php
 
-namespace Mediawiki\Extension\LandingCheck;
+namespace MediaWiki\Extension\LandingCheck;
 
 class Hooks {
 
