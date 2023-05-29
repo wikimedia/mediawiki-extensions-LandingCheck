@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Nokeoo",
 			"Tomasdd"
 		]
 	},
-	"landingcheck": "LandingCheck"
+	"landingcheck-desc": "Leidžia naudoti geografiškai pritaikytus, lokalizuotus, tikslo puslapius",
+	"landingcheck": "LandingCheck",
+	"landingcheck-nopage": "Vykdant užklausa puslapių nerasta."
 }
