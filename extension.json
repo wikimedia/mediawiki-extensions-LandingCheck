@@ -28,7 +28,12 @@
 		]
 	},
 	"Hooks": {
-		"Language::getMessagesFileName": "MediaWiki\\Extension\\LandingCheck\\Hooks::onGetMessagesFileName"
+		"Language::getMessagesFileName": "main"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "MediaWiki\\Extension\\LandingCheck\\Hooks"
+		}
 	},
 	"ExtensionMessagesFiles": {
 		"LandingCheckAlias": "LandingCheck.alias.php"
