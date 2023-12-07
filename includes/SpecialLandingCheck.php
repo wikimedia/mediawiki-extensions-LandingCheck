@@ -13,7 +13,6 @@ use MediaWiki\Languages\LanguageNameUtils;
 use MediaWiki\Title\Title;
 use MediaWiki\Utils\UrlUtils;
 use SpecialPage;
-use Wikimedia\IPUtils;
 
 class SpecialLandingCheck extends SpecialPage {
 	/** @var LanguageNameUtils */
@@ -103,14 +102,7 @@ class SpecialLandingCheck extends SpecialPage {
 				$country = $components[0];
 			}
 		}
-		// If no country was found yet, try to do GeoIP lookup
-		// Requires php5-geoip package
-		if ( !$country && function_exists( 'geoip_country_code_by_name' ) ) {
-			$ip = $request->getIP();
-			if ( IPUtils::isValid( $ip ) ) {
-				$country = geoip_country_code_by_name( $ip );
-			}
-		}
+
 		if ( !$country ) {
 			$country = 'US'; // Default
 		}
