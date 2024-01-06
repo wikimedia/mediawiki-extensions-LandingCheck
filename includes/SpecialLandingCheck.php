@@ -10,9 +10,9 @@ namespace MediaWiki\Extension\LandingCheck;
 
 use MediaWiki\Languages\LanguageFallback;
 use MediaWiki\Languages\LanguageNameUtils;
+use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
 use MediaWiki\Utils\UrlUtils;
-use SpecialPage;
 
 class SpecialLandingCheck extends SpecialPage {
 	/** @var LanguageNameUtils */
