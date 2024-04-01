@@ -38,7 +38,7 @@ class SpecialLandingCheck extends SpecialPage {
 	 * position the resulting page. This is currently used only for non-fundraising links that need
 	 * localization and therefore is only checked if basic (above) is true.
 	 *
-	 * @var string
+	 * @var string|null
 	 */
 	protected $anchor = null;
 
@@ -259,7 +259,7 @@ class SpecialLandingCheck extends SpecialPage {
 			$target = Title::newFromText( $targetText );
 			if ( $target && $target->isKnown() && $target->getNamespace() == NS_MAIN ) {
 				if ( $this->basic ) {
-					if ( isset( $this->anchor ) ) {
+					if ( $this->anchor !== null ) {
 						$out->redirect( $target->getLocalURL() . '#' . $this->anchor );
 					} else {
 						$out->redirect( $target->getLocalURL() );
