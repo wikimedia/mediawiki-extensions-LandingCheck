@@ -24,6 +24,7 @@ class SpecialLandingCheck extends SpecialPage {
 	/** @var UrlUtils */
 	private $urlUtils;
 
+	/** @var string|null */
 	protected $localServerType = null;
 	/**
 	 * If basic is set to true, do a local redirect, ignore priority, and don't pass tracking
