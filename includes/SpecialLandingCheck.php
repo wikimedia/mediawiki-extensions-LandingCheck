@@ -10,6 +10,7 @@ namespace MediaWiki\Extension\LandingCheck;
 
 use MediaWiki\Languages\LanguageFallback;
 use MediaWiki\Languages\LanguageNameUtils;
+use MediaWiki\MainConfigNames;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
 use MediaWiki\Utils\UrlUtils;
@@ -64,7 +65,6 @@ class SpecialLandingCheck extends SpecialPage {
 	 * @param string $sub
 	 */
 	public function execute( $sub ) {
-		global $wgPriorityCountries;
 		$request = $this->getRequest();
 
 		// If we have a subpage; assume it's a language like an internationalized page
@@ -109,7 +109,7 @@ class SpecialLandingCheck extends SpecialPage {
 		}
 
 		// determine if we are fulfilling a request for a priority country
-		$priority = in_array( $country, $wgPriorityCountries );
+		$priority = in_array( $country, $this->getConfig()->get( 'PriorityCountries' ) );
 
 		// handle the actual redirect
 		$this->routeRedirect( $country, $language, $priority );
@@ -123,16 +123,16 @@ class SpecialLandingCheck extends SpecialPage {
 	 * @return string
 	 */
 	public function determineLocalServerType() {
-		global $wgServer, $wgLandingCheckPriorityURLBase, $wgLandingCheckNormalURLBase;
-
-		$localServerDetails = $this->urlUtils->parse( $wgServer );
+		$config = $this->getConfig();
+		$localServerDetails = $this->urlUtils->parse( $config->get( MainConfigNames::Server ) );
 
 		if ( $localServerDetails === null ) {
 			return 'local';
 		}
 
-		if ( $wgLandingCheckPriorityURLBase !== null ) {
-			$priorityServerDetails = $this->urlUtils->parse( $wgLandingCheckPriorityURLBase );
+		$landingCheckPriorityURLBase = $config->get( 'LandingCheckPriorityURLBase' );
+		if ( $landingCheckPriorityURLBase !== null ) {
+			$priorityServerDetails = $this->urlUtils->parse( $landingCheckPriorityURLBase );
 			if ( $priorityServerDetails !== null
 				&& $localServerDetails[ 'host' ] === $priorityServerDetails[ 'host' ]
 			) {
@@ -140,8 +140,9 @@ class SpecialLandingCheck extends SpecialPage {
 			}
 		}
 
-		if ( $wgLandingCheckNormalURLBase !== null ) {
-			$normalServerDetails = $this->urlUtils->parse( $wgLandingCheckNormalURLBase );
+		$landingCheckNormalURLBase = $config->get( 'LandingCheckNormalURLBase' );
+		if ( $landingCheckNormalURLBase !== null ) {
+			$normalServerDetails = $this->urlUtils->parse( $landingCheckNormalURLBase );
 			if ( $normalServerDetails !== null
 				&& $localServerDetails[ 'host' ] === $normalServerDetails[ 'host' ]
 			) {
@@ -186,19 +187,16 @@ class SpecialLandingCheck extends SpecialPage {
 	 * @param bool $priority
 	 */
 	public function externalRedirect( $priority ) {
-		global $wgLandingCheckPriorityURLBase, $wgLandingCheckNormalURLBase;
-
 		if ( $priority ) {
-			$urlBase = $wgLandingCheckPriorityURLBase;
+			$urlBase = $this->getConfig()->get( 'LandingCheckPriorityURLBase' );
 
 		} else {
-			$urlBase = $wgLandingCheckNormalURLBase;
+			$urlBase = $this->getConfig()->get( 'LandingCheckNormalURLBase' );
 		}
 
 		$query = $this->getRequest()->getValues();
 		unset( $query[ 'title' ] );
 
-		// @phan-suppress-next-line PhanTypeMismatchArgument urlBase always not null
 		$url = wfAppendQuery( $urlBase, $query );
 		$this->getOutput()->redirect( $url );
 	}
