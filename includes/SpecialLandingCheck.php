@@ -105,7 +105,8 @@ class SpecialLandingCheck extends SpecialPage {
 		}
 
 		if ( !$country ) {
-			$country = 'US'; // Default
+			// Default
+			$country = 'US';
 		}
 
 		// determine if we are fulfilling a request for a priority country
@@ -228,7 +229,8 @@ class SpecialLandingCheck extends SpecialPage {
 			'utm_campaign' => $request->getVal( 'utm_campaign' ),
 			'utm_key' => $request->getVal( 'utm_key' ),
 			'language' => $language,
-			'uselang' => $language, // for {{int:xxx}} rendering
+			// for {{int:xxx}} rendering
+			'uselang' => $language,
 			'country' => $country,
 			'referrer' => $request->getHeader( 'referer' )
 		] );
@@ -299,6 +301,7 @@ class SpecialLandingCheck extends SpecialPage {
 		return $this->localServerType;
 	}
 
+	/** @inheritDoc */
 	protected function getGroupName() {
 		return 'contribution';
 	}
