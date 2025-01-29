@@ -62,7 +62,7 @@ class SpecialLandingCheck extends SpecialPage {
 	}
 
 	/**
-	 * @param string $sub
+	 * @param string|null $sub
 	 */
 	public function execute( $sub ) {
 		$request = $this->getRequest();
@@ -70,7 +70,7 @@ class SpecialLandingCheck extends SpecialPage {
 		// If we have a subpage; assume it's a language like an internationalized page
 
 		$language = 'en';
-		$path = explode( '/', $sub );
+		$path = explode( '/', $sub ?? '' );
 		if ( $this->languageNameUtils->isValidCode( $path[count( $path ) - 1] ) ) {
 			$language = $sub;
 		}
