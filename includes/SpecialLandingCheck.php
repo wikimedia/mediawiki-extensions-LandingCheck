@@ -16,15 +16,6 @@ use MediaWiki\Title\Title;
 use MediaWiki\Utils\UrlUtils;
 
 class SpecialLandingCheck extends SpecialPage {
-	/** @var LanguageNameUtils */
-	private $languageNameUtils;
-
-	/** @var LanguageFallback */
-	private $languageFallback;
-
-	/** @var UrlUtils */
-	private $urlUtils;
-
 	/** @var string|null */
 	protected $localServerType = null;
 	/**
@@ -44,21 +35,12 @@ class SpecialLandingCheck extends SpecialPage {
 	 */
 	protected $anchor = null;
 
-	/**
-	 * @param LanguageNameUtils $languageNameUtils
-	 * @param LanguageFallback $languageFallback
-	 * @param UrlUtils $urlUtils
-	 */
 	public function __construct(
-		LanguageNameUtils $languageNameUtils,
-		LanguageFallback $languageFallback,
-		UrlUtils $urlUtils
+		private readonly LanguageNameUtils $languageNameUtils,
+		private readonly LanguageFallback $languageFallback,
+		private readonly UrlUtils $urlUtils,
 	) {
-		// Register special page
 		parent::__construct( 'LandingCheck' );
-		$this->languageNameUtils = $languageNameUtils;
-		$this->languageFallback = $languageFallback;
-		$this->urlUtils = $urlUtils;
 	}
 
 	/**
