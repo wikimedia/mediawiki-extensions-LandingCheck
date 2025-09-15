@@ -4,5 +4,7 @@
 			"Умар"
 		]
 	},
-	"landingcheck": "LandingCheck"
+	"landingcheck-desc": "Гео-къаьсттина локализаци йина агӀонаш лело атта до",
+	"landingcheck": "LandingCheck",
+	"landingcheck-nopage": "Дехар кхочушдеш цхьа а агӀо ца карийна."
 }
