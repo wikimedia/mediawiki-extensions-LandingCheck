@@ -2,8 +2,6 @@
 
 namespace MediaWiki\Extension\LandingCheck;
 
-// phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
-
 use MediaWiki\Languages\Hook\Language__getMessagesFileNameHook;
 
 class Hooks implements Language__getMessagesFileNameHook {
