@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Daud I.F. Argana",
-			"IvanLanin"
+			"IvanLanin",
+			"Penyuwangi"
 		]
 	},
-	"landingcheck-desc": "Memfasilitasi penggunaan halaman arahan bertarget geografis lokal",
+	"landingcheck-desc": "Memfasilitasi penggunaan halaman arahan setempat yang ditargetkan secara geografis.",
 	"landingcheck": "LandingCheck",
 	"landingcheck-nopage": "Tidak ada halaman yang ditemukan ketika melaksanakan permintaan ini."
 }
