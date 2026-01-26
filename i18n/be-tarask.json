@@ -3,10 +3,11 @@
 		"authors": [
 			"EugeneZelenko",
 			"Jim-by",
+			"Ucukor",
 			"Wizardist"
 		]
 	},
-	"landingcheck-desc": "Палягчае выкарыстаньне геаграфічна лякалізаваных мэтавых старонак",
+	"landingcheck-desc": "Палягчае ўжытак ґеаґрафічна лякалізаваных мэтавых старонак",
 	"landingcheck": "LandingCheck",
 	"landingcheck-nopage": "У час выкананьня запыту ніводнай старонкі не было знойдзена."
 }
