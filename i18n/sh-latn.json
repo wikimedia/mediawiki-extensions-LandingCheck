@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Winston Sung"
+			"Winston Sung",
+			"Aca"
 		]
 	},
 	"landingcheck-desc": "Omogućava korištenje mjestoprilagođenih i prevedenih ciljne stranice u zavisnosti sa zemljom korisnika",
 	"landingcheck": "Provjera ciljne stranice",
-	"landingcheck-nopage": "Vršeći radnju nisam našao nijednu stranicu."
+	"landingcheck-nopage": "Nije pronađena nijedna stranica pri izvršenju zahtjeva."
 }
