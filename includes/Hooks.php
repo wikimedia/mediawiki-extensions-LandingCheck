@@ -2,7 +2,7 @@
 
 namespace MediaWiki\Extension\LandingCheck;
 
-use MediaWiki\Languages\Hook\Language__getMessagesFileNameHook;
+use MediaWiki\Language\Hook\Language__getMessagesFileNameHook;
 
 class Hooks implements Language__getMessagesFileNameHook {
 

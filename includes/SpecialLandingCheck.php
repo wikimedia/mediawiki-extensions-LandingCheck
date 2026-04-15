@@ -8,8 +8,8 @@
 
 namespace MediaWiki\Extension\LandingCheck;
 
-use MediaWiki\Languages\LanguageFallback;
-use MediaWiki\Languages\LanguageNameUtils;
+use MediaWiki\Language\LanguageFallback;
+use MediaWiki\Language\LanguageNameUtils;
 use MediaWiki\MainConfigNames;
 use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
