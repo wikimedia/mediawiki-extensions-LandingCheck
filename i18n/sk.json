@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Helix84"
+			"Helix84",
+			"Wizzard"
 		]
 	},
 	"landingcheck-desc": "Umožňuje použitie lokalizovaných vstupných stránok geotargeted",
-	"landingcheck": "KontrolaVstupnejStránky"
+	"landingcheck": "KontrolaVstupnejStránky",
+	"landingcheck-nopage": "Pri spracovaní požiadavky sa nenašli žiadne stránky."
 }
